@@ -1,0 +1,23 @@
+body { font-family: sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+header { background: #fff; padding: 20px; text-align: center; border-bottom: 4px solid #cc0000; }
+header h1 { margin: 0; font-size: 2.5em; text-transform: uppercase; font-weight: 900; }
+nav { background: #222; color: #fff; padding: 12px; text-align: center; text-transform: uppercase; font-size: 0.9em; font-weight: bold; }
+nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+.container { display: flex; max-width: 1200px; margin: 20px auto; gap: 30px; padding: 0 15px; }
+main { flex: 3; display: flex; flex-direction: column; gap: 20px; }
+aside { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+article { background: #fff; padding: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.hero img { width: 100%; height: auto; display: block; }
+.hero h1 { font-size: 2.2em; margin: 15px 0 10px; line-height: 1.1; }
+.hero p { font-size: 1.1em; color: #555; }
+.grid-news { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.news-item img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+.news-item h2 { font-size: 1.3em; margin: 10px 0; line-height: 1.2; }
+.news-item p { font-size: 0.95em; color: #555; }
+.sidebar-widget { background: #fff; padding: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-top: 4px solid #333; }
+.sidebar-widget h3 { margin-top: 0; font-size: 1.2em; text-transform: uppercase; }
+.sidebar-widget ul { list-style: none; padding: 0; margin: 0; }
+.sidebar-widget li { padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; }
+.sidebar-widget li:last-child { border-bottom: none; }
+.sidebar-widget a { text-decoration: none; color: #333; }
+footer { background: #222; color: #ccc; text-align: center; padding: 30px; margin-top: 40px; font-size: 0.9em; }

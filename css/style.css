@@ -1,23 +1,129 @@
-body { font-family: sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-header { background: #fff; padding: 20px; text-align: center; border-bottom: 4px solid #cc0000; }
-header h1 { margin: 0; font-size: 2.5em; text-transform: uppercase; font-weight: 900; }
-nav { background: #222; color: #fff; padding: 12px; text-align: center; text-transform: uppercase; font-size: 0.9em; font-weight: bold; }
-nav a { color: #fff; margin: 0 15px; text-decoration: none; }
-.container { display: flex; max-width: 1200px; margin: 20px auto; gap: 30px; padding: 0 15px; }
-main { flex: 3; display: flex; flex-direction: column; gap: 20px; }
-aside { flex: 1; display: flex; flex-direction: column; gap: 20px; }
-article { background: #fff; padding: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-.hero img { width: 100%; height: auto; display: block; }
-.hero h1 { font-size: 2.2em; margin: 15px 0 10px; line-height: 1.1; }
-.hero p { font-size: 1.1em; color: #555; }
-.grid-news { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.news-item img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
-.news-item h2 { font-size: 1.3em; margin: 10px 0; line-height: 1.2; }
-.news-item p { font-size: 0.95em; color: #555; }
-.sidebar-widget { background: #fff; padding: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-top: 4px solid #333; }
-.sidebar-widget h3 { margin-top: 0; font-size: 1.2em; text-transform: uppercase; }
-.sidebar-widget ul { list-style: none; padding: 0; margin: 0; }
-.sidebar-widget li { padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; }
-.sidebar-widget li:last-child { border-bottom: none; }
-.sidebar-widget a { text-decoration: none; color: #333; }
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* GENERALI */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+body { margin: 0 22%; font-family: "EB Garamond", serif; }
+header { background-color: white; position: sticky; top: -79.5px; }
+nav a { font-size: .75rem; color: #262424; padding: 3px; text-decoration: none; align-items: center; }
+
+button { border-radius: 2px; background: none; border: none; text-transform: uppercase; }
+button span { text-transform: uppercase; }
+
+hr { margin: 0; border: none; border-top: 1px solid; }
+p { font-size: .75rem; margin: 0; }
+time { font-size: .75rem; }
+h3 { margin: 0; font-size: 1rem; font-weight: 400; color: #7f8589 }
+
+main { margin: 1rem 0; }
+
 footer { background: #222; color: #ccc; text-align: center; padding: 30px; margin-top: 40px; font-size: 0.9em; }
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* MENU */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+.menu-header-sezioni {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.menu-header-scomparsa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+.menu-header-notizie {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    column-gap: 0.75rem;
+    position: sticky;
+    top: 74px;
+}
+
+.menu-header-notizie nav {
+    display: flex;
+    column-gap: 0.75rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* ELEMENTI HEADER */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+.icona-testo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 15px;
+}
+
+.icona-testo span { transition: 0.5s ease; }
+.icona-testo span:hover { color: #7f8589; }
+
+.icona { width: 24px; height: 24px; }
+.mini_icona { width: 16px; height: 16px; }
+
+.abbonati {
+    background-color: #a83946;
+    color: white;
+    font-size: .875rem;
+    padding: .45rem;
+    transition: 0.5s ease;
+}
+
+.abbonati:hover { background-color: #282728; }
+
+.header-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-section.left { align-items: flex-start; }
+.header-section.center { align-items: center; }
+.header-section.right { align-items: flex-end; }
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* SCORRIMENTO DELLA PAGINA */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+.logo-piccolo {
+    display: none;
+    margin-right: 1.5rem;
+}
+
+.scivolamento .logo-piccolo {
+    display: block;
+    opacity: 1;
+}
+
+.separatore {
+    position: sticky;
+    top: 63.4px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* ARTICOLI' */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* PUBBLICITA' */
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+.ad_centrale {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}

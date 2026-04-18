@@ -5,73 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bozza Quotidiano</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>CHE LOGO DI MERDA</h1>
+<!-- HEADER -->
+<header id="testata-principale">
+    <div class="menu-header-sezioni">
+        <nav>
+            <button class="icona-testo" >
+                <img src="assets/search_menu.png" class="icona" alt="Icona Ricerca">
+                <span>menu</span>
+            </button>
+        </nav>
+
+        <nav>
+            <a href="#">In Edicola</a>
+            <a href="#">Blog</a>
+            <a href="#">Millennium</a>
+            <a href="#">FQ Magazine</a>
+            <a href="#">Shop</a>
+            <a href="#">
+                <span>Il Mondo FQ</span>
+                <img src="assets/expand.png" class="mini_icona" alt="Espandi">
+            </a>
+        </nav>
+
+        <nav class="icona-testo">
+            <button class="abbonati">abbonati</button>
+            <button class="icona-testo">
+                <img src="assets/user.png" class="icona" alt="Utente">
+                <span>accedi</span>
+            </button>
+        </nav>
+    </div>
+
+    <hr class="separatore">
+
+    <div class="menu-header-scomparsa">
+        <div class="header-section left">
+            <p style="font-size: 1.375rem;">Sostieni il nostro giornalismo</p>
+            <p style="color: #706f6f">Leggere quello che gli altri non dicono dipende da te</p>
+        </div>
+
+        <div class="header-section center">
+            <a href="#">
+                <img src="assets/logo.svg" alt="Logo Quotidiano" height="59">
+            </a>
+        </div>
+
+        <div class="header-section right">
+            <time id="today-date" datetime=""></time>
+            <p>Ultimo aggiornamento: 11:30</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="menu-header-notizie">
+        <a href="#" class="logo-piccolo">
+            <img src="assets/logo.svg" alt="Logo piccolo" height="40">
+        </a>
+
+        <nav>
+            <a href="#"><h3>Politica</h3></a>
+            <a href="#"><h3>Giustizia</h3></a>
+            <a href="#"><h3>Economia</h3></a>
+            <a href="#"><h3>Mondo</h3></a>
+            <a href="#"><h3>Cronaca</h3></a>
+        </nav>
+    </div>
+
+    <hr class="separatore">
 </header>
 
-<nav>
-    <a href="#">Politica</a>
-    <a href="#">Giustizia</a>
-    <a href="#">Economia</a>
-    <a href="#">Mondo</a>
-    <a href="#">Cronaca</a>
-</nav>
+<!-- MAIN -->
+<main>
 
-<div class="container">
-    <main>
-        <article class="hero">
-            <img src="https://via.placeholder.com/800x450?text=questaeunaimmagine" alt="Placeholder Immagine Principale">
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor</h1>
-            <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </article>
-
-        <div class="grid-news">
-            <article class="news-item">
-                <img src="https://via.placeholder.com/400x225" alt="Placeholder Notizia">
-                <h2>Excepteur sint occaecat cupidatat non proident</h2>
-                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </article>
-            <article class="news-item">
-                <img src="https://via.placeholder.com/400x225" alt="Placeholder Notizia">
-                <h2>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</h2>
-                <p>Aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
-            </article>
-            <article class="news-item">
-                <img src="https://via.placeholder.com/400x225" alt="Placeholder Notizia">
-                <h2>Neque porro quisquam est qui dolorem ipsum</h2>
-                <p>Quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
-            </article>
-            <article class="news-item">
-                <img src="https://via.placeholder.com/400x225" alt="Placeholder Notizia">
-                <h2>Ut enim ad minima veniam quis nostrum exercitationem</h2>
-                <p>Ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
-            </article>
-        </div>
-    </main>
-
-    <aside>
-        <div class="sidebar-widget">
-            <h3>Le più lette</h3>
-            <ul>
-                <li><a href="#">Quis autem vel eum iure reprehenderit</a></li>
-                <li><a href="#">Qui in ea voluptate velit esse quam nihil</a></li>
-                <li><a href="#">Molestiae consequatur vel illum qui dolorem</a></li>
-                <li><a href="#">Eum fugiat quo voluptas nulla pariatur</a></li>
-                <li><a href="#">At vero eos et accusamus et iusto odio</a></li>
-            </ul>
-        </div>
-
-        <article class="news-item" style="border-top: 4px solid #cc0000; margin-top: 20px;">
-            <img src="https://via.placeholder.com/300x250" alt="Placeholder Focus">
-            <h2>Dignissimos ducimus qui blanditiis praesentium</h2>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
-        </article>
-    </aside>
+<div class="ad_centrale">
+    <img src="https://placehold.co/900x230?text=Pubblicità" alt="Pubblicità">
 </div>
 
+<section>
+    <header>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    </header>
+</section>
+
+</main>
+
+<!-- FOOTER -->
 <footer>
     <p>&copy; 2026 Bozza Quotidiano. Lorem ipsum dolor sit amet.</p>
     <a href="https://www.flaticon.com/free-icons/index" title="index icons">Index icons created by Freepik - Flaticon</a>

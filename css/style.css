@@ -3,8 +3,9 @@
 /* GENERALI */
 /* --------------------------------------------------------------------------------------------------------------------- */
 
-body { margin: 0 22%; font-family: "EB Garamond", serif; }
-header { background-color: white; position: sticky; top: -79.5px; }
+body { width: clamp(0px, 100vw, 900px); margin: 0 auto; font-family: "EB Garamond", serif; }
+body::-webkit-scrollbar { display: none; }
+header { background-color: white; position: sticky; top: -97px; }
 nav a { font-size: .75rem; color: #262424; padding: 3px; text-decoration: none; align-items: center; }
 div a { font-size: .75rem; color: #262424; padding: 3px; text-decoration: none; align-items: center; }
 
@@ -15,7 +16,7 @@ p { font-size: .75rem; margin: 0; }
 time { font-size: .75rem; }
 h3 { margin: 0; font-size: 1rem; font-weight: 400; color: #7f8589 }
 
-main { margin: 1rem 0; }
+hr { margin: 0; border: none; border-top: 1px solid; }
 
 footer { background: #222; color: #ccc; text-align: center; padding: 30px; margin-top: 40px; font-size: 0.9em; }
 
@@ -31,6 +32,7 @@ footer { background: #222; color: #ccc; text-align: center; padding: 30px; margi
     background-color: white;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .menu-header-scomparsa {
@@ -40,31 +42,27 @@ footer { background: #222; color: #ccc; text-align: center; padding: 30px; margi
     padding: .5rem;
 }
 
-.menu-header-notizie {
+.menu-slider {
     display: flex;
     background-color: white;
     align-items: center;
-    column-gap: 0.75rem;
-    position: sticky;
-    top: 74px;
-}
-
-.menu-header-notizie nav {
-    display: flex;
-    column-gap: 0.75rem;
+    gap: 0.75rem;
     padding: 1rem;
-    align-items: center;
+    position: sticky;
+    top: 62.2px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
 }
 
-/* --------------------------------------------------------------------------------------------------------------------- */
-/* ELEMENTI HEADER */
-/* --------------------------------------------------------------------------------------------------------------------- */
+.oggetto-slider { display: flex; align-items: center; }
+.menu-slider::-webkit-scrollbar { display: none; }
 
 .icona-testo {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 0 15px;
 }
 
 .icona-testo span { transition: 0.5s ease; }
@@ -73,7 +71,7 @@ footer { background: #222; color: #ccc; text-align: center; padding: 30px; margi
 .icona { width: 24px; height: 24px; }
 .mini-icona { width: 16px; height: 16px; }
 
-.abbonati {
+.bottone-rosso {
     background-color: #a83946;
     color: white;
     font-size: .875rem;
@@ -81,25 +79,26 @@ footer { background: #222; color: #ccc; text-align: center; padding: 30px; margi
     transition: 0.5s ease;
 }
 
-.abbonati:hover { background-color: #282728; }
+.bottone-rosso:hover { background-color: #282728; }
 
-.header-section {
+.sezione-header {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.header-section.left { align-items: flex-start; }
-.header-section.center { align-items: center; }
-.header-section.right { align-items: flex-end; }
+.sezione-header.left { align-items: flex-start; }
+.sezione-header.center { align-items: center; }
+.sezione-header.right { align-items: flex-end; }
 
-/* --------------------------------------------------------------------------------------------------------------------- */
-/* SCORRIMENTO HEADER */
-/* --------------------------------------------------------------------------------------------------------------------- */
+.logo-scomparsa {
+    display: none;
+    margin: -10px;
+}
 
 .logo-piccolo {
     display: none;
-    margin-right: 1.5rem;
+    margin: -50px 1.5rem -50px 0;
 }
 
 .scivolamento .logo-piccolo {
@@ -107,95 +106,34 @@ footer { background: #222; color: #ccc; text-align: center; padding: 30px; margi
     opacity: 1;
 }
 
+.scorrimento-hr { display: none; }
+
 .separatore-header {
-    margin: 0;
-    border: none;
-    border-top: 1px solid;
     position: sticky;
-    top: 63.4px;
+    top: 63.2px;
 }
 
-.separatore-fine {
-    margin: 0;
-    border: none;
-    border-top: 1px solid;
-}
 
 /* --------------------------------------------------------------------------------------------------------------------- */
-/* ARTICOLI */
+/* MEDIA */
 /* --------------------------------------------------------------------------------------------------------------------- */
 
-aside { border-left: 1px solid #ccc; padding-left: 20px; width: 30%;  }
-h1 { font-family: "EB Garamond",serif; color: #262424; text-transform: uppercase; font-size: 1.25rem; font-weight: 700; letter-spacing: -.015rem; padding-right: 20px; }
-h2 { font-family: "EB Garamond",serif; font-weight: 500; font-size: 2.25rem; line-height: 1.15; letter-spacing: -.015rem; margin: 0; }
-
-p { font-weight: 400; font-family: "TT Norms",sans-serif; font-size: 1rem; line-height: 1.5; color: #5c5c5c; }
-
-.testata-principale {
-    display: flex;
-    align-items: center;
+@media (max-width: 900px) {
+    .menu-header-scomparsa { display: none; }
+    .separatore-header { display: none; }
+    .ad-centrale { display: none; }
 }
 
-/* animazione live */
-.punto-live {
-    height: 10px;
-    width: 10px;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 5px;
-    animation: change-color 2s infinite;
+@media (max-width: 730px) {
+    .menu-sezioni { display: none; }
 }
 
-@keyframes change-color {
-    0%, 100% { background-color: white; }
-    50% { background-color: #a83946; }
+@media (max-width: 600px) {
+    .menu { display: none; }
+    .logo-scomparsa { display: flex; }
+    .scivolamento .logo-piccolo { display: none; }
 }
 
-.titolo-principale {
-    font-family: "EB Garamond",serif;
-    font-weight: 500;
-    font-size: 2.25rem;
-    line-height: 1.15;
-    letter-spacing: -.015rem;
-}
-
-.sezione-principale {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.articolo-principale {
-    width: 70%;
-}
-
-.autore {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-    max-width: 420px;
-}
-
-.navigazione-autore {
-    font-family: "TT Norms",sans-serif;
-    font-size: .75rem;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.icona-separatrice {
-    padding-left: 5px;
-    border-left: 1px solid;
-}
-
-.img-desc {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 /* --------------------------------------------------------------------------------------------------------------------- */
 /* PUBBLICITA' */
@@ -204,11 +142,7 @@ p { font-weight: 400; font-family: "TT Norms",sans-serif; font-size: 1rem; line-
 .ad-centrale {
     display: flex;
     width: 100%;
-    height: 250px;
     align-items: center;
     justify-content: center;
-}
-
-.ad-laterale {
-
+    height: 230px;
 }

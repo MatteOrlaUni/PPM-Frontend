@@ -18,13 +18,13 @@ const dataISO = oggi.toISOString().split('T')[0];
 timeElement.setAttribute('datetime', dataISO);
 
 
-// apparizione logo piccolo
-window.addEventListener('scroll', function() {
+// scorrimento testata
+window.addEventListener("scroll", function() {
     const testata = document.getElementById('testata-principale');
 
-    if (window.scrollY > 50) {
+    if (window.scrollY > 0) {
         testata.classList.add('scivolamento');
     } else {
         testata.classList.remove('scivolamento');
     }
-});
+})

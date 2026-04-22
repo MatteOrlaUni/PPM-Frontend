@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bozza Quotidiano</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/index.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/tt-norms" rel="stylesheet">
 </head>
 <body>
@@ -15,13 +15,13 @@
 <header id="testata-principale">
     <div class="menu-header-sezioni">
         <nav>
-            <button class="icona-testo" >
+            <button class="icona-testo">
                 <img src="assets/search_menu.png" class="icona" alt="Icona Ricerca">
-                <span>menu</span>
+                <span class="menu">menu</span>
             </button>
         </nav>
 
-        <nav>
+        <nav class="menu-sezioni">
             <a href="#">In Edicola</a>
             <a href="#">Blog</a>
             <a href="#">Millennium</a>
@@ -32,76 +32,75 @@
                 <img src="assets/expand.png" class="mini-icona" alt="Espandi">
             </a>
         </nav>
+        
+        <a href="#" class="logo-scomparsa">
+            <img src="assets/logo.svg"  alt="Logo">
+        </a>
 
         <nav class="icona-testo">
-            <button class="abbonati">abbonati</button>
+            <button class="bottone-rosso">abbonati</button>
             <button class="icona-testo">
                 <img src="assets/user.png" class="icona" alt="Utente">
                 <span>accedi</span>
             </button>
         </nav>
     </div>
-
+    
     <hr class="separatore-header">
 
     <div class="menu-header-scomparsa">
-        <div class="header-section left">
+        <div class="sezione-header left">
             <p style="font-size: 1.375rem;">Sostieni il nostro giornalismo</p>
             <p style="color: #706f6f">Leggere quello che gli altri non dicono dipende da te</p>
         </div>
 
-        <div class="header-section center">
+        <div class="sezione-header center">
             <a href="#">
-                <img src="assets/logo.svg" alt="Logo Quotidiano" height="59">
+                <img src="assets/logo.svg" alt="Logo Quotidiano" height="60">
             </a>
         </div>
-
-        <div class="header-section right">
+        
+        <div class="sezione-header right">
             <time id="today-date" datetime=""></time>
             <p>Ultimo aggiornamento: 11:30</p>
         </div>
     </div>
 
-    <hr class="separatore-fine">
+    <hr>
+    
+    <nav class="menu-slider">
+        <a href="#" class="logo-piccolo oggetto-slider"><img src="assets/logo.svg" alt="Logo piccolo" height="40"></a>
 
-    <div class="menu-header-notizie">
-        <a href="#" class="logo-piccolo">
-            <img src="assets/logo.svg" alt="Logo piccolo" height="40">
-        </a>
+        <a href="#" class="oggetto-slider"><h3>Politica</h3></a>
+        <a href="#" class="oggetto-slider"><h3>Giustizia</h3></a>
+        <a href="#" class="oggetto-slider"><h3>Economia</h3></a>
+        <a href="#" class="oggetto-slider"><h3>Mondo</h3></a>
+        <a href="#" class="oggetto-slider"><h3>Cronaca</h3></a>
+    </nav>
 
-        <nav>
-            <a href="#"><h3>Politica</h3></a>
-            <a href="#"><h3>Giustizia</h3></a>
-            <a href="#"><h3>Economia</h3></a>
-            <a href="#"><h3>Mondo</h3></a>
-            <a href="#"><h3>Cronaca</h3></a>
-        </nav>
-    </div>
-
-    <hr class="separatore-header">
+    <hr>
 </header>
 
 <!-- MAIN -->
 <main>
 
-<div class="ad-centrale">
-    <img src="https://placehold.co/900x230?text=Pubblicità" alt="Pubblicità">
-</div>
+    <div class="ad-centrale">
+        <img src="assets/img/900x23.svg" alt="Pubblicità">
+    </div>
 
-<hr class="separatore_notizie">
+    <hr>
 
-<section class="sezione-principale">
-    <article class="articolo-principale">
-        <header class="testata-principale">
+    <article>
+        <header class="argomento">
             <h1>articolo principale</h1>
-            <button class="abbonati">
-                <span class="punto-live"></span>
+            <button class="bottone-rosso">
+                <span class="animazione_live"></span>
                 <span>live</span>
             </button>
         </header>
 
         <a>
-            <h2 class="titolo-principale">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque</h2>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque</h2>
         </a>
 
         <!-- autore -->
@@ -111,39 +110,37 @@
                 <span>AUTORE</span>
             </a>
 
-            <nav class="navigazione-autore">
+            <nav class="icone-autore">
                 <a href="#"><img src="assets/share.png" alt="Condividi" class="mini-icona"></a>
-                <a href="#" class="icona-separatrice"><img src="assets/comments.png" alt="Commenti" class="mini-icona"></a>
+                <a href="#" class="icona-separatrice"><img src="assets/comments.png" alt="Commenti"
+                                                           class="mini-icona"></a>
                 <span>(3)</span>
             </nav>
         </div>
+        <!-- autore -->
 
-        <div class="img-desc">
-            <img src="https://placehold.co/420x200?text=Immagine" alt="Immagine">
-            <div>
-                <p>
-                    Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue imperdiet.
-                    <br>Suspendisse tortor lorem, eleifend vitae porta a, malesuada non metus. Phasellus sed sapien enim
-                </p>
-                <a>
-                    <span>Leggi articolo</span>
-                    <img src="assets/next.png" alt="Continua" class="mini-icona">
-                </a>
-            </div>
+        <img src="assets/img/420x200.svg" alt="Immagine">
+        <div>
+            <p>
+                Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue
+                imperdiet.
+                <br>Suspendisse tortor lorem, eleifend vitae porta a, malesuada non metus. Phasellus sed sapien
+                enim
+            </p>
+            <a class="leggi-articolo">
+                <span>Leggi articolo</span>
+                <img src="assets/next.png" alt="Continua" class="mini-icona"> <!-- TODO: trovare l'icona in formato .svg -->
+            </a>
         </div>
     </article>
-
-    <aside>
-
-    </aside>
-</section>
 
 </main>
 
 <!-- FOOTER -->
 <footer>
     <p>&copy; 2026 Bozza Quotidiano. Lorem ipsum dolor sit amet.</p>
-    <a href="https://www.flaticon.com/free-icons/index" title="index icons">Index icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/index" title="index icons">Index icons created by Freepik -
+        Flaticon</a>
 </footer>
 
 </body>

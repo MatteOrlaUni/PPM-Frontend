@@ -1,77 +1,91 @@
 
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../assets/fonts/TT Norms Pro Light.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../assets/fonts/TT Norms Pro Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* --------------------------------------------------------------------------------------------------------------------- */
 /* GENERALI */
 /* --------------------------------------------------------------------------------------------------------------------- */
 
-body { width: clamp(0px, 100vw, 900px); margin: 0 auto; font-family: "EB Garamond", serif; }
+html { scrollbar-width: none; }
+
+body { width: clamp(0px, 100vw, 1000px); margin: 0 auto; font-family: "TT Norms Pro", sans-serif; font-size: .75rem; font-weight: 200; }
 body::-webkit-scrollbar { display: none; }
-header { background-color: white; position: sticky; top: -97px; }
-nav a { font-size: .75rem; color: #262424; padding: 3px; text-decoration: none; align-items: center; }
-div a { font-size: .75rem; color: #262424; padding: 3px; text-decoration: none; align-items: center; }
+header { background-color: white; position: sticky; top: 0; }
+footer { background: black; color: white; padding: .5rem 2rem; }
+
+h4 { margin: 0; font-size: 1rem; font-weight: 400; color: #7f8589 }
+a { text-decoration: none; color: inherit; }
 
 button { border-radius: 2px; background: none; border: none; text-transform: uppercase; }
 button span { text-transform: uppercase; }
-
-p { font-size: .75rem; margin: 0; }
-time { font-size: .75rem; }
-h3 { margin: 0; font-size: 1rem; font-weight: 400; color: #7f8589 }
-
 hr { margin: 0; border: none; border-top: 1px solid; }
 
-footer { background: #222; color: #ccc; text-align: center; padding: 30px; margin-top: 40px; font-size: 0.9em; }
+.riga { display: flex; align-items: center; gap: .5rem; }
+.colonna { display: flex; flex-direction: column; flex: 1; }
+.centro { display: flex; justify-content: center; }
+.maiuscolo { text-transform: uppercase; }
+.grassetto { font-weight: 400; }
+.negativo { filter: invert(100%); }
+
+.riga-separatrice { display: flex; align-items: center; gap: .5rem; justify-content: space-between; }
+.separatore-invisibile { content: ""; margin: .75rem 0; }
 
 /* --------------------------------------------------------------------------------------------------------------------- */
-/* MENU */
+/* HEADER */
 /* --------------------------------------------------------------------------------------------------------------------- */
 
-.menu-header-sezioni {
-    display: flex;
-    align-items: center;
+.menu-header {
     justify-content: space-between;
     padding: 1rem;
     background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 100;
 }
+
+.menu-sezioni { display: flex; gap: 1rem; }
 
 .menu-header-scomparsa {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: .5rem;
+    padding: .1rem .5rem;
 }
 
+.apparizione-testata { display: none; }
+
+.menu-header-scomparsa-titolo { font-family: "EB Garamond",serif; font-size: 1.375rem; font-weight: 500; }
+.menu-header-scomparsa-sottotitolo { font-size: .8rem; color: #706f6f; }
+.data { color: #706f6f; }
+
 .menu-slider {
-    display: flex;
     background-color: white;
-    align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
     padding: 1rem;
-    position: sticky;
-    top: 62.2px;
+    color: #262424;
 
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
-.oggetto-slider { display: flex; align-items: center; }
 .menu-slider::-webkit-scrollbar { display: none; }
 
-.icona-testo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+.cambio-colore { font-size: .9rem; letter-spacing: 1px; transition: 0.5s ease; color: #262424; }
+.cambio-colore:hover { color: #7f8589; }
 
-.icona-testo span { transition: 0.5s ease; }
-.icona-testo span:hover { color: #7f8589; }
+.icona-grande { width: 24px; height: 24px; }
+.icona { width: 16px; height: 16px; }
 
-.icona { width: 24px; height: 24px; }
-.mini-icona { width: 16px; height: 16px; }
-
-.bottone-rosso {
+.pulsante-rosso {
     background-color: #a83946;
     color: white;
     font-size: .875rem;
@@ -79,38 +93,25 @@ footer { background: #222; color: #ccc; text-align: center; padding: 30px; margi
     transition: 0.5s ease;
 }
 
-.bottone-rosso:hover { background-color: #282728; }
+.pulsante-rosso:hover { background-color: #282728; }
 
-.sezione-header {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
+.colonna.sinistra { align-items: flex-start; }
+.colonna.centro { align-items: center; }
+.colonna.destra { align-items: flex-end; }
 
-.sezione-header.left { align-items: flex-start; }
-.sezione-header.center { align-items: center; }
-.sezione-header.right { align-items: flex-end; }
-
-.logo-scomparsa {
+.logo-telefono {
     display: none;
     margin: -10px;
 }
 
-.logo-piccolo {
+.logo-laterale {
     display: none;
-    margin: -50px 1.5rem -50px 0;
 }
 
-.scivolamento .logo-piccolo {
+.apparizione-logo {
     display: block;
     opacity: 1;
-}
-
-.scorrimento-hr { display: none; }
-
-.separatore-header {
-    position: sticky;
-    top: 63.2px;
+    margin: -50px 1.5rem -50px 0;
 }
 
 
@@ -118,10 +119,9 @@ footer { background: #222; color: #ccc; text-align: center; padding: 30px; margi
 /* MEDIA */
 /* --------------------------------------------------------------------------------------------------------------------- */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .menu-header-scomparsa { display: none; }
     .separatore-header { display: none; }
-    .ad-centrale { display: none; }
 }
 
 @media (max-width: 730px) {
@@ -130,19 +130,26 @@ footer { background: #222; color: #ccc; text-align: center; padding: 30px; margi
 
 @media (max-width: 600px) {
     .menu { display: none; }
-    .logo-scomparsa { display: flex; }
-    .scivolamento .logo-piccolo { display: none; }
+    .logo-telefono { display: flex; }
+    .logo-laterale { display: none; }
 }
 
 
 /* --------------------------------------------------------------------------------------------------------------------- */
-/* PUBBLICITA' */
+/* PUBBLICITA' E FOOTER */
 /* --------------------------------------------------------------------------------------------------------------------- */
 
 .ad-centrale {
+    font-size: 1rem;
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
     height: 230px;
 }
+
+.elemento-footer {
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.icone-footer { gap: 1rem; }

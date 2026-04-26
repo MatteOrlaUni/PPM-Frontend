@@ -1,19 +1,57 @@
 
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../assets/fonts/TT Norms Pro Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../assets/fonts/TT Norms Pro Medium.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('../assets/fonts/TT Norms Pro Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 /* --------------------------------------------------------------------------------------------------------------------- */
-/* ARTICOLI */
+/* GENERALI */
 /* --------------------------------------------------------------------------------------------------------------------- */
 
 main { margin: 1rem 0; padding: 0 1rem; }
 
-h1 { font-family: "EB Garamond",serif; color: #262424; text-transform: uppercase; font-size: 1.25rem; font-weight: 700; letter-spacing: -.015rem; padding-right: 20px;  }
+h1 { color: #262424; text-transform: uppercase; font-size: 1.25rem; font-weight: 700; letter-spacing: -.015rem; padding-right: 20px;  }
 h2 { font-family: "EB Garamond",serif; font-weight: 500; font-size: 2.25rem; line-height: 1.15; letter-spacing: -.015rem; margin: 0; }
+h3 { font-family: "EB Garamond",serif; font-size: 1.375rem; font-weight: 500; line-height: 1.15; margin: .75rem 0; color: #262424; }
+p { margin: 0; }
 
-p { font-weight: 400; font-family: "TT Norms",sans-serif; font-size: 1rem; line-height: 1.5; color: #5c5c5c; }
+.separatore-articoli { margin: .5rem 0; border-top: 2px solid; }
+.separatore-articoli-fine { margin: .5rem 0; }
 
-.argomento {
-    display: flex;
-    align-items: center;
+.autore {
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: .5rem 0;
 }
+
+.autore a { height: 16px; }
+.autore a span { color: #5c5c5c; }
+
+.icona-separatrice {
+    padding-left: 5px;
+    border-left: 1px solid;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+/* ARTICOLO PRINCIPALE */
+/* --------------------------------------------------------------------------------------------------------------------- */
 
 /* animazione live */
 .animazione_live {
@@ -31,39 +69,63 @@ p { font-weight: 400; font-family: "TT Norms",sans-serif; font-size: 1rem; line-
     50% { background-color: #a83946; }
 }
 
-.autore {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-}
-
-.icone-autore {
-    font-family: "TT Norms",sans-serif;
-    font-size: .75rem;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.icona-separatrice {
-    padding-left: 5px;
-    border-left: 1px solid;
+.paragrafo {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: .5rem 0;
 }
 
 .leggi-articolo {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     gap: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .1rem;
+    border-bottom: 2px solid #a83946;
 }
-.leggi-articolo span { font-size: .85rem; color: #a83946; border-bottom: 2px solid #a83946; }
-.leggi-articolo img { color: #a83946; }
 
+.leggi-articolo span { color: #a83946; }
+
+.articolo-flash {
+    display:flex;
+    justify-content: space-between;
+    gap: .5rem;
+}
 
 /* --------------------------------------------------------------------------------------------------------------------- */
-/* MEDIA */
+/* SLIDER VIDEO E BLOG */
 /* --------------------------------------------------------------------------------------------------------------------- */
 
-@media (max-width: 700px) {
-    .immagine-descrizione { flex-direction: column-reverse; }
+.slider {
+    background-color: white;
+    gap: 1rem;
+    padding: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    flex-shrink: 0;
 }
+
+.slider::-webkit-scrollbar { display: none; }
+.oggetto-slider { min-width: 248px; margin: 0 .7rem; scroll-snap-align: start; }
+.copertina-video { display: flex; justify-content: center; border-radius: 5px; }
+
+.blog { font-style: italic;
+    color: #262424;
+    font-weight: 600;
+    letter-spacing: -.3px;
+}
+
+.blog::before {
+    content: "";
+    display: inline-block;
+    flex-shrink: 0;
+    width: 33px;
+    height: 22px;
+    background-image: url("../assets/icons/blog.svg");
+    margin: .75rem 0;
+    align-self: flex-start;
+}
+
+.utente { border-radius: 100%; }
+.descrizione-utente { line-height: 1.3; color: #5c5c5c; }

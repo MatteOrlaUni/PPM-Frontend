@@ -18,13 +18,19 @@ const dataISO = oggi.toISOString().split('T')[0];
 timeElement.setAttribute('datetime', dataISO);
 
 
-// scorrimento testata
+// aggiunge logo appena inizio a scorrere la pagina
 window.addEventListener("scroll", function() {
-    const testata = document.getElementById('testata-principale');
+    const img = document.getElementById('logo-laterale');
+    const menu = document.getElementById('menu-header-scomparsa');
+    const hr = document.getElementById('menu-header-scomparsa-hr');
 
     if (window.scrollY > 0) {
-        testata.classList.add('scivolamento');
+        img.classList.add('apparizione-logo');
+        menu.classList.add('apparizione-testata');
+        hr.classList.add('apparizione-testata');
     } else {
-        testata.classList.remove('scivolamento');
+        img.classList.remove('apparizione-logo');
+        menu.classList.remove('apparizione-testata');
+        hr.classList.remove('apparizione-testata');
     }
 })

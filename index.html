@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bozza Quotidiano</title>
+    <title>Il Fatto Quotidiano</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/index.js" defer></script>
-    <link href="https://fonts.cdnfonts.com/css/tt-norms" rel="stylesheet">
+
+    <!--  fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- HEADER -->
-<header id="testata-principale">
-    <div class="menu-header-sezioni">
+<header>
+    <div class="riga menu-header">
         <nav>
-            <button class="icona-testo">
-                <img src="assets/search_menu.png" class="icona" alt="Icona Ricerca">
-                <span class="menu">menu</span>
+            <button class="riga">
+                <img src="assets/icons/menu.svg" class="icona-grande" alt="Icona Ricerca">
+                <span class="cambio-colore">menu</span>
             </button>
         </nav>
 
@@ -27,40 +31,40 @@
             <a href="#">Millennium</a>
             <a href="#">FQ Magazine</a>
             <a href="#">Shop</a>
-            <a href="#">
-                <span>Il Mondo FQ</span>
-                <img src="assets/expand.png" class="mini-icona" alt="Espandi">
+            <a href="#" class="riga">
+                Il Mondo FQ
+                <img src="assets/icons/expand.svg" class="icona" alt="Espandi">
             </a>
         </nav>
         
-        <a href="#" class="logo-scomparsa">
-            <img src="assets/logo.svg"  alt="Logo">
+        <a href="#" class="logo-telefono">
+            <img src="assets/img/logo.svg"  alt="Logo">
         </a>
 
-        <nav class="icona-testo">
-            <button class="bottone-rosso">abbonati</button>
-            <button class="icona-testo">
-                <img src="assets/user.png" class="icona" alt="Utente">
-                <span>accedi</span>
+        <nav class="riga">
+            <button class="pulsante-rosso">abbonati</button>
+            <button class="riga">
+                <img src="assets/icons/user.svg" class="icona-grande" alt="Utente">
+                <span class="cambio-colore">accedi</span>
             </button>
         </nav>
     </div>
     
-    <hr class="separatore-header">
+    <hr class="separatore-header" id="menu-header-scomparsa-hr">
 
-    <div class="menu-header-scomparsa">
-        <div class="sezione-header left">
-            <p style="font-size: 1.375rem;">Sostieni il nostro giornalismo</p>
-            <p style="color: #706f6f">Leggere quello che gli altri non dicono dipende da te</p>
+    <div class="riga menu-header-scomparsa" id="menu-header-scomparsa">
+        <div class="colonna sinistra">
+            <p class="menu-header-scomparsa-titolo">Sostieni il nostro giornalismo</p>
+            <p class="menu-header-scomparsa-sottotitolo">Leggere quello che gli altri non dicono dipende da te</p>
         </div>
 
-        <div class="sezione-header center">
+        <div class="colonna centro">
             <a href="#">
-                <img src="assets/logo.svg" alt="Logo Quotidiano" height="60">
+                <img src="assets/img/logo.svg" alt="Logo Quotidiano" height="59">
             </a>
         </div>
         
-        <div class="sezione-header right">
+        <div class="colonna destra data">
             <time id="today-date" datetime=""></time>
             <p>Ultimo aggiornamento: 11:30</p>
         </div>
@@ -68,14 +72,20 @@
 
     <hr>
     
-    <nav class="menu-slider">
-        <a href="#" class="logo-piccolo oggetto-slider"><img src="assets/logo.svg" alt="Logo piccolo" height="40"></a>
+    <nav class="riga menu-slider">
+        <a href="#" class="logo-laterale" id="logo-laterale">
+            <img src="assets/img/logo.svg" alt="Logo piccolo" height="40">
+        </a>
 
-        <a href="#" class="oggetto-slider"><h3>Politica</h3></a>
-        <a href="#" class="oggetto-slider"><h3>Giustizia</h3></a>
-        <a href="#" class="oggetto-slider"><h3>Economia</h3></a>
-        <a href="#" class="oggetto-slider"><h3>Mondo</h3></a>
-        <a href="#" class="oggetto-slider"><h3>Cronaca</h3></a>
+        <a href="#"><h4>Politica</h4></a>
+        <a href="#"><h4>Giustizia</h4></a>
+        <a href="#"><h4>Economia</h4></a>
+        <a href="#"><h4>Mondo</h4></a>
+        <a href="#"><h4>Cronaca</h4></a>
+        <a href="#"><h4>Guerra Iran</h4></a>
+        <a href="#"><h4>Israele</h4></a>
+        <a href="#"><h4>Crisi Energetica</h4></a>
+        <a href="#"><h4>Donald Trump</h4></a>
     </nav>
 
     <hr>
@@ -84,63 +94,549 @@
 <!-- MAIN -->
 <main>
 
-    <div class="ad-centrale">
-        <img src="assets/img/900x23.svg" alt="Pubblicità">
-    </div>
+    <div class="ad-centrale">Pubblicità</div>
 
-    <hr>
+    <hr class="separatore-articoli">
 
+    <!--  articolo principale ====================================================================================  -->
     <article>
-        <header class="argomento">
-            <h1>articolo principale</h1>
-            <button class="bottone-rosso">
+        <div class="riga">
+            <h1>argomento principale</h1>
+            <button class="pulsante-rosso">
                 <span class="animazione_live"></span>
                 <span>live</span>
             </button>
-        </header>
+        </div>
 
         <a>
             <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque</h2>
         </a>
 
         <!-- autore -->
-        <div class="autore">
+        <div class="riga autore">
             <a href="#">
-                <span>DI</span>
-                <span>AUTORE</span>
+                <span>di</span>
+                <span class="grassetto">autore</span>
             </a>
 
-            <nav class="icone-autore">
-                <a href="#"><img src="assets/share.png" alt="Condividi" class="mini-icona"></a>
-                <a href="#" class="icona-separatrice"><img src="assets/comments.png" alt="Commenti"
-                                                           class="mini-icona"></a>
+            <nav class="riga">
+                <a href="#"><img src="assets/icons/share.svg" alt="Condividi" class="icona"></a>
+                <a href="#" class="icona-separatrice"><img src="assets/icons/comments.svg" alt="Commenti" class="icona"></a>
                 <span>(3)</span>
             </nav>
         </div>
         <!-- autore -->
 
-        <img src="assets/img/420x200.svg" alt="Immagine">
+        <div class="centro">
+            <a href="#">
+                <img src="assets/img/420x200.svg" alt="Immagine">
+            </a>
+        </div>
         <div>
-            <p>
+            <p class="paragrafo">
                 Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue
                 imperdiet.
                 <br>Suspendisse tortor lorem, eleifend vitae porta a, malesuada non metus. Phasellus sed sapien
                 enim
             </p>
-            <a class="leggi-articolo">
+            <a class="leggi-articolo" href="#">
                 <span>Leggi articolo</span>
-                <img src="assets/next.png" alt="Continua" class="mini-icona"> <!-- TODO: trovare l'icona in formato .svg -->
+                <img src="assets/icons/next.svg" alt="Next" class="icona">
             </a>
         </div>
     </article>
+    <!--  articolo principale ====================================================================================  -->
 
+    <hr class="separatore-articoli">
+
+    <!--  articolo flash ====================================================================================  -->
+    <article>
+        <a href="#">
+            <h4 class="maiuscolo">mondo</h4>
+            <div class="articolo-flash">
+                <h3>Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue imperdiet</h3>
+                <img src="assets/img/90x90.svg" alt="img">
+            </div>
+        </a>
+
+        <div class="riga autore">
+            <a href="#">
+                <span>di</span>
+                <span class="grassetto">autore</span>
+            </a>
+
+            <nav class="riga icone-autore">
+                <a href="#">
+                    <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                </a>
+                <a href="#" class="icona-separatrice">
+                    <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                </a>
+                <p>(3)</p>
+            </nav>
+        </div>
+    </article>
+
+    <hr class="separatore-articoli-fine">
+
+    <article>
+        <a href="#">
+            <h4 class="maiuscolo">mondo</h4>
+            <div class="articolo-flash">
+                <h3>Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue imperdiet</h3>
+                <img src="assets/img/90x90.svg" alt="img">
+            </div>
+        </a>
+
+        <div class="riga autore">
+            <a href="#">
+                <span>di</span>
+                <span class="grassetto">autore</span>
+            </a>
+
+            <nav class="riga icone-autore">
+                <a href="#">
+                    <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                </a>
+                <a href="#" class="icona-separatrice">
+                    <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                </a>
+                <p>(3)</p>
+            </nav>
+        </div>
+    </article>
+
+    <hr class="separatore-articoli-fine">
+
+    <article>
+        <a href="#">
+            <h4 class="maiuscolo">mondo</h4>
+            <div class="articolo-flash">
+                <h3>Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue imperdiet</h3>
+                <img src="assets/img/90x90.svg" alt="img">
+            </div>
+        </a>
+
+        <div class="riga autore">
+            <a href="#">
+                <span>di</span>
+                <span class="grassetto">autore</span>
+            </a>
+
+            <nav class="riga icone-autore">
+                <a href="#">
+                    <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                </a>
+                <a href="#" class="icona-separatrice">
+                    <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                </a>
+                <p>(3)</p>
+            </nav>
+        </div>
+    </article>
+
+    <hr class="separatore-articoli-fine">
+
+    <article>
+        <a href="#">
+            <h4 class="maiuscolo">mondo</h4>
+            <div class="articolo-flash">
+                <h3>Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue imperdiet</h3>
+                <img src="assets/img/90x90.svg" alt="img">
+            </div>
+        </a>
+
+        <div class="riga autore">
+            <a href="#">
+                <span>di</span>
+                <span class="grassetto">autore</span>
+            </a>
+
+            <nav class="riga icone-autore">
+                <a href="#">
+                    <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                </a>
+                <a href="#" class="icona-separatrice">
+                    <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                </a>
+                <p>(3)</p>
+            </nav>
+        </div>
+    </article>
+    <!--  articolo flash ====================================================================================  -->
+
+    <hr class="separatore-articoli">
+
+    <!--  video ====================================================================================  -->
+    <section>
+        <div class="riga-separatrice">
+            <a href="#">
+                <h1>video in evidenza</h1>
+            </a>
+            <a href="#" class="riga">
+                <h4>Nascondi</h4>
+                <img src="assets/icons/compress.svg" class="icona" alt="Espandi">
+            </a>
+        </div>
+
+        <div class="riga slider">
+            <div class="oggetto-slider">
+                <a href="#">
+                    <h4 class="maiuscolo">mondo</h4>
+                </a>
+
+                <div class="separatore-invisibile"></div>
+
+                <a href="#" class="centro">
+                    <img src="assets/img/video.svg" alt="Video" class="copertina-video">
+                </a>
+
+                <a href="#">
+                    <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
+                </a>
+
+                <div class="riga autore">
+                    <a href="#">
+                        <span>di</span>
+                        <span class="grassetto">autore</span>
+                    </a>
+
+                    <nav class="riga icone-autore">
+                        <a href="#">
+                            <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                        </a>
+                        <a href="#" class="icona-separatrice">
+                            <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                        </a>
+                        <p>(3)</p>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="oggetto-slider">
+                <a href="#">
+                    <h4 class="maiuscolo">mondo</h4>
+                </a>
+
+                <div class="separatore-invisibile"></div>
+
+                <a href="#" class="centro">
+                    <img src="assets/img/video.svg" alt="Video" class="copertina-video">
+                </a>
+
+                <a href="#">
+                    <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
+                </a>
+
+                <div class="riga autore">
+                    <a href="#">
+                        <span>di</span>
+                        <span class="grassetto">autore</span>
+                    </a>
+
+                    <nav class="riga icone-autore">
+                        <a href="#">
+                            <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                        </a>
+                        <a href="#" class="icona-separatrice">
+                            <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                        </a>
+                        <p>(3)</p>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="oggetto-slider">
+                <a href="#">
+                    <h4 class="maiuscolo">mondo</h4>
+                </a>
+
+                <div class="separatore-invisibile"></div>
+
+                <a href="#" class="centro">
+                    <img src="assets/img/video.svg" alt="Video" class="copertina-video">
+                </a>
+
+                <a href="#">
+                    <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
+                </a>
+
+                <div class="riga autore">
+                    <a href="#">
+                        <span>di</span>
+                        <span class="grassetto">autore</span>
+                    </a>
+
+                    <nav class="riga icone-autore">
+                        <a href="#">
+                            <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                        </a>
+                        <a href="#" class="icona-separatrice">
+                            <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                        </a>
+                        <p>(3)</p>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="oggetto-slider">
+                <a href="#">
+                    <h4 class="maiuscolo">mondo</h4>
+                </a>
+
+                <div class="separatore-invisibile"></div>
+
+                <a href="#" class="centro">
+                    <img src="assets/img/video.svg" alt="Video" class="copertina-video">
+                </a>
+
+                <a href="#">
+                    <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
+                </a>
+
+                <div class="riga autore">
+                    <a href="#">
+                        <span>di</span>
+                        <span class="grassetto">autore</span>
+                    </a>
+
+                    <nav class="riga icone-autore">
+                        <a href="#">
+                            <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                        </a>
+                        <a href="#" class="icona-separatrice">
+                            <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                        </a>
+                        <p>(3)</p>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  video ====================================================================================  -->
+
+    <hr class="separatore-articoli">
+
+    <!--  blog ====================================================================================  -->
+    <section>
+        <div class="riga-separatrice">
+            <div class="riga">
+                <a href="#">
+                    <img src="assets/img/blog.svg" alt="Espandi" width="60">
+                </a>
+
+                <a href="#">
+                    <h1>dai blog</h1>
+                </a>
+            </div>
+
+            <a href="#" class="riga">
+                <h4>Nascondi</h4>
+                <img src="assets/icons/compress.svg" class="icona" alt="Nascondi">
+            </a>
+        </div>
+
+        <div class="riga slider">
+            <div class="oggetto-slider">
+                <div class="riga blog">
+                    <a href="#">
+                        <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
+                    </a>
+                </div>
+
+                <!-- autore blog -->
+                <div class="riga">
+                    <a>
+                        <img src="assets/img/utente.svg" alt="Utente" class="utente">
+                    </a>
+
+                    <div>
+                        <a href="#" class="autore">
+                            <span>di</span>
+                            <span class="grassetto">autore</span>
+                        </a>
+
+                        <br>
+                        <p class="descrizione-utente">Descrizione del personaggio</p>
+                    </div>
+                </div>
+
+                <div class="separatore-invisibile"></div>
+
+                <nav class="riga icone-autore">
+                    <a href="#">
+                        <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                    </a>
+                    <a href="#" class="icona-separatrice">
+                        <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                    </a>
+                    <p>(3)</p>
+                </nav>
+            </div>
+
+            <div class="oggetto-slider">
+                <div class="riga blog">
+                    <a href="#">
+                        <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
+                    </a>
+                </div>
+
+                <!-- autore blog -->
+                <div class="riga">
+                    <a>
+                        <img src="assets/img/utente.svg" alt="Utente" class="utente">
+                    </a>
+
+                    <div>
+                        <a href="#" class="autore">
+                            <span>di</span>
+                            <span class="grassetto">autore</span>
+                        </a>
+
+                        <br>
+                        <p class="descrizione-utente">Descrizione del personaggio</p>
+                    </div>
+                </div>
+
+                <div class="separatore-invisibile"></div>
+
+                <nav class="riga icone-autore">
+                    <a href="#">
+                        <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                    </a>
+                    <a href="#" class="icona-separatrice">
+                        <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                    </a>
+                    <p>(3)</p>
+                </nav>
+            </div>
+
+            <div class="oggetto-slider">
+                <div class="riga blog">
+                    <a href="#">
+                        <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
+                    </a>
+                </div>
+
+                <!-- autore blog -->
+                <div class="riga">
+                    <a>
+                        <img src="assets/img/utente.svg" alt="Utente" class="utente">
+                    </a>
+
+                    <div>
+                        <a href="#" class="autore">
+                            <span>di</span>
+                            <span class="grassetto">autore</span>
+                        </a>
+
+                        <br>
+                        <p class="descrizione-utente">Descrizione del personaggio</p>
+                    </div>
+                </div>
+
+                <div class="separatore-invisibile"></div>
+
+                <nav class="riga icone-autore">
+                    <a href="#">
+                        <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                    </a>
+                    <a href="#" class="icona-separatrice">
+                        <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                    </a>
+                    <p>(3)</p>
+                </nav>
+            </div>
+
+            <div class="oggetto-slider">
+                <div class="riga blog">
+                    <a href="#">
+                        <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
+                    </a>
+                </div>
+
+                <!-- autore blog -->
+                <div class="riga">
+                    <a>
+                        <img src="assets/img/utente.svg" alt="Utente" class="utente">
+                    </a>
+
+                    <div>
+                        <a href="#" class="autore">
+                            <span>di</span>
+                            <span class="grassetto">autore</span>
+                        </a>
+
+                        <br>
+                        <p class="descrizione-utente">Descrizione del personaggio</p>
+                    </div>
+                </div>
+
+                <div class="separatore-invisibile"></div>
+
+                <nav class="riga icone-autore">
+                    <a href="#">
+                        <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                    </a>
+                    <a href="#" class="icona-separatrice">
+                        <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                    </a>
+                    <p>(3)</p>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!--  blog ====================================================================================  -->
+
+    <hr class="separatore-articoli">
 </main>
 
 <!-- FOOTER -->
 <footer>
-    <p>&copy; 2026 Bozza Quotidiano. Lorem ipsum dolor sit amet.</p>
-    <a href="https://www.flaticon.com/free-icons/index" title="index icons">Index icons created by Freepik -
-        Flaticon</a>
+    <a href="#" class="centro elemento-footer">
+        <img src="assets/img/logo.svg" alt="Logo negativo" class="negativo" height="32">
+    </a>
+
+    <hr class="separatore-articoli negativo">
+
+    <nav class="colonna maiuscolo elemento-footer">
+        <a href="#">termini e condizioni d'uso</a>
+        <a href="#">privacy policy</a>
+        <a href="#">cambia impostazioni privacy</a>
+        <a href="#">pubblicità</a>
+        <a href="#">abbonati</a>
+        <a href="#">newsletter</a>
+        <a href="#">faq</a>
+        <a href="#">gerenza</a>
+        <a href="#">contatti</a>
+    </nav>
+
+    <hr class="separatore-articoli negativo">
+
+    <nav class="colonna maiuscolo elemento-footer">
+        <a href="#">tv loft</a>
+        <a href="#">scuola del fatto</a>
+        <a href="#">fondazione fq</a>
+        <a href="#">millennium</a>
+        <a href="#">paperfirst</a>
+        <a href="#">ioscelgo</a>
+        <a href="#">community</a>
+    </nav>
+
+    <hr class="separatore-articoli negativo">
+
+    <nav class="riga maiuscolo elemento-footer centro icone-footer negativo">
+        <a href="#"><img src="assets/icons/facebook.svg" alt="" class="icona"></a>
+        <a href="#"><img src="assets/icons/messanger.svg" alt="" class="icona"></a>
+        <a href="#"><img src="assets/icons/instagram.svg" alt="" class="icona"></a>
+        <a href="#"><img src="assets/icons/linked%20in.svg" alt="" class="icona"></a>
+        <a href="#"><img src="assets/icons/telegram.svg" alt="" class="icona"></a>
+        <a href="#"><img src="assets/icons/x.svg" alt="" class="icona"></a>
+    </nav>
+
+    <hr class="separatore-articoli negativo">
+
+    <p class="centro elemento-footer">&copy; 2026 Bozza Quotidiano. Lorem ipsum dolor sit amet.</p>
 </footer>
 
 </body>

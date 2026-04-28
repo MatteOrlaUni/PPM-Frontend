@@ -58,12 +58,10 @@
             <p class="menu-header-scomparsa-sottotitolo">Leggere quello che gli altri non dicono dipende da te</p>
         </div>
 
-        <div class="colonna centro">
-            <a href="#">
-                <img src="assets/img/logo.svg" alt="Logo Quotidiano" height="59">
-            </a>
-        </div>
-        
+        <a href="#" class="colonna centro">
+            <img src="assets/img/logo.svg" alt="Logo" height="59">
+        </a>
+
         <div class="colonna destra data">
             <time id="today-date" datetime=""></time>
             <p>Ultimo aggiornamento: 11:30</p>
@@ -99,83 +97,84 @@
     <hr class="separatore-articoli">
 
     <!--  articolo principale ====================================================================================  -->
-    <article>
-        <div class="riga">
-            <h1>argomento principale</h1>
-            <button class="pulsante-rosso">
-                <span class="animazione_live"></span>
-                <span>live</span>
-            </button>
-        </div>
+    <div class="colonna live">
+        <h1>argomento principale</h1>
+        <button class="pulsante-rosso">
+            <span class="animazione_live"></span>
+            <span>live</span>
+        </button>
+    </div>
 
-        <a>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque</h2>
-        </a>
+    <a>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque</h2>
+    </a>
 
-        <!-- autore -->
-        <div class="riga autore">
-            <a href="#">
-                <span>di</span>
-                <span class="grassetto">autore</span>
-            </a>
-
-            <nav class="riga">
-                <a href="#"><img src="assets/icons/share.svg" alt="Condividi" class="icona"></a>
-                <a href="#" class="icona-separatrice"><img src="assets/icons/comments.svg" alt="Commenti" class="icona"></a>
-                <span>(3)</span>
-            </nav>
-        </div>
-        <!-- autore -->
-
-        <div class="centro">
-            <a href="#">
-                <img src="assets/img/420x200.svg" alt="Immagine">
-            </a>
-        </div>
-        <div>
-            <p class="paragrafo">
-                Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue
-                imperdiet.
-                <br>Suspendisse tortor lorem, eleifend vitae porta a, malesuada non metus. Phasellus sed sapien
-                enim
-            </p>
-            <a class="leggi-articolo" href="#">
-                <span>Leggi articolo</span>
-                <img src="assets/icons/next.svg" alt="Next" class="icona">
-            </a>
-        </div>
-    </article>
-    <!--  articolo principale ====================================================================================  -->
-
-    <hr class="separatore-articoli">
-
-    <!--  articolo flash ====================================================================================  -->
-    <article>
+    <!-- autore -->
+    <div class="riga autore autore-art-principale">
         <a href="#">
-            <h4 class="maiuscolo">mondo</h4>
-            <div class="articolo-flash">
-                <h3>Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue imperdiet</h3>
-                <img src="assets/img/90x90.svg" alt="img">
-            </div>
+            <span>di</span>
+            <span class="grassetto">autore</span>
         </a>
 
-        <div class="riga autore">
-            <a href="#">
-                <span>di</span>
-                <span class="grassetto">autore</span>
+        <nav class="riga">
+            <a href="#"><img src="assets/icons/share.svg" alt="Condividi" class="icona"></a>
+            <a href="#" class="icona-separatrice"><img src="assets/icons/comments.svg" alt="Commenti" class="icona"></a>
+            <span>(3)</span>
+        </nav>
+    </div>
+    <!-- autore -->
+
+    <section class="articolo-principale">
+        <div class="img-paragrafo">
+            <a href="#" class="centro">
+                <img src="assets/img/420x200.svg" alt="img" class="img-grande">
             </a>
 
-            <nav class="riga icone-autore">
-                <a href="#">
-                    <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+            <div>
+                <p class="paragrafo">
+                    Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue
+                    imperdiet.
+                    <br>Suspendisse tortor lorem, eleifend vitae porta a, malesuada non metus. Phasellus sed sapien
+                    enim
+                </p>
+                <a class="leggi-articolo" href="#">
+                    <span>Leggi articolo</span>
+                    <img src="assets/icons/next.svg" alt="nxt" class="icona">
                 </a>
-                <a href="#" class="icona-separatrice">
-                    <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
-                </a>
-                <p>(3)</p>
-            </nav>
+            </div>
         </div>
-    </article>
+
+        <hr class="separatore-articoli">
+
+        <!--  articolo flash ====================================================================================  -->
+        <article>
+            <a href="#">
+                <h4 class="maiuscolo">mondo</h4>
+                <div class="articolo-flash">
+                    <h3>Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue imperdiet</h3>
+                    <img src="assets/img/90x90.svg" alt="img">
+                </div>
+            </a>
+
+            <div class="riga autore">
+                <a href="#">
+                    <span>di</span>
+                    <span class="grassetto">autore</span>
+                </a>
+
+                <nav class="riga icone-autore">
+                    <a href="#">
+                        <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                    </a>
+                    <a href="#" class="icona-separatrice">
+                        <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                    </a>
+                    <p>(3)</p>
+                </nav>
+            </div>
+        </article>
+    </section>
+    <!--  articolo principale ====================================================================================  -->
 
     <hr class="separatore-articoli-fine">
 

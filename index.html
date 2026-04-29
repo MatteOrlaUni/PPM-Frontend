@@ -21,7 +21,7 @@
         <nav>
             <button class="riga">
                 <img src="assets/icons/menu.svg" class="icona-grande" alt="Icona Ricerca">
-                <span class="cambio-colore">menu</span>
+                <span class="cambio-colore maiuscolo">menu</span>
             </button>
         </nav>
 
@@ -32,7 +32,7 @@
             <a href="#">FQ Magazine</a>
             <a href="#">Shop</a>
             <a href="#" class="riga">
-                Il Mondo FQ
+                Il argomento FQ
                 <img src="assets/icons/expand.svg" class="icona" alt="Espandi">
             </a>
         </nav>
@@ -42,10 +42,10 @@
         </a>
 
         <nav class="riga">
-            <button class="pulsante-rosso">abbonati</button>
+            <button class="pulsante-rosso maiuscolo">abbonati</button>
             <button class="riga">
                 <img src="assets/icons/user.svg" class="icona-grande" alt="Utente">
-                <span class="cambio-colore">accedi</span>
+                <span class="cambio-colore maiuscolo">accedi</span>
             </button>
         </nav>
     </div>
@@ -78,7 +78,7 @@
         <a href="#"><h4>Politica</h4></a>
         <a href="#"><h4>Giustizia</h4></a>
         <a href="#"><h4>Economia</h4></a>
-        <a href="#"><h4>Mondo</h4></a>
+        <a href="#"><h4>argomento</h4></a>
         <a href="#"><h4>Cronaca</h4></a>
         <a href="#"><h4>Guerra Iran</h4></a>
         <a href="#"><h4>Israele</h4></a>
@@ -96,41 +96,46 @@
 
     <hr class="separatore-articoli">
 
+    <!--  ============================================================================  -->
+    <!--  LAYOUT PRINCIPALE  -->
+    <!--  ============================================================================  -->
+
+
     <!--  articolo principale ====================================================================================  -->
     <div class="colonna live">
         <h1>argomento principale</h1>
         <button class="pulsante-rosso">
             <span class="animazione_live"></span>
-            <span>live</span>
+            <span class="maiuscolo">live</span>
         </button>
     </div>
 
-    <a>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque</h2>
-    </a>
-
-    <!-- autore -->
-    <div class="riga autore autore-art-principale">
-        <a href="#">
-            <span>di</span>
-            <span class="grassetto">autore</span>
-        </a>
-
-        <nav class="riga">
-            <a href="#"><img src="assets/icons/share.svg" alt="Condividi" class="icona"></a>
-            <a href="#" class="icona-separatrice"><img src="assets/icons/comments.svg" alt="Commenti" class="icona"></a>
-            <span>(3)</span>
-        </nav>
-    </div>
-    <!-- autore -->
-
-    <section class="articolo-principale">
-        <div class="img-paragrafo">
-            <a href="#" class="centro">
-                <img src="assets/img/420x200.svg" alt="img" class="img-grande">
+    <section class="layout-principale">
+        <article class="articolo-principale">
+            <a href="#" class="layout-principale-titolo">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque</h2>
             </a>
 
-            <div>
+            <!-- autore -->
+            <div class="riga autore layout-principale-autore">
+                <a href="#">
+                    <span>di</span>
+                    <span class="grassetto">autore</span>
+                </a>
+
+                <nav class="riga">
+                    <a href="#"><img src="assets/icons/share.svg" alt="Condividi" class="icona"></a>
+                    <a href="#" class="icona-separatrice"><img src="assets/icons/comments.svg" alt="Commenti" class="icona"></a>
+                    <span>(3)</span>
+                </nav>
+            </div>
+            <!-- autore -->
+
+            <a href="#" class="centro layout-principale-immagine">
+                <img src="assets/img/main_img.svg" alt="img" class="img-grande">
+            </a>
+
+            <div class="layout-principale-descrizione">
                 <p class="paragrafo">
                     Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue
                     imperdiet.
@@ -142,17 +147,137 @@
                     <img src="assets/icons/next.svg" alt="nxt" class="icona">
                 </a>
             </div>
-        </div>
+        </article>
+        <!--  articolo principale ====================================================================================  -->
 
-        <hr class="separatore-articoli">
+        <hr class="separatore-articoli separatore-telefono">
 
+        <aside class="articoli-laterali">
         <!--  articolo flash ====================================================================================  -->
-        <article>
+            <article class="articolo-flash bordo-inferiore articolo-flash-laterale">
+                <a href="#">
+                    <h4 class="maiuscolo">argomento</h4>
+                    <div class="riga-articolo-flash">
+                        <h3>Nullam tincidunt accumsan est id mattis. Duis sed cursus dolor. Integer</h3>
+                        <img src="assets/img/flash_img.svg" alt="img" class="img-flash">
+                    </div>
+                </a>
+
+                <div class="riga autore">
+                    <a href="#">
+                        <span>di</span>
+                        <span class="grassetto">autore</span>
+                    </a>
+
+                    <nav class="riga icone-autore">
+                        <a href="#">
+                            <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                        </a>
+                        <a href="#" class="icona-separatrice">
+                            <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                        </a>
+                        <p>(3)</p>
+                    </nav>
+                </div>
+            </article>
+            <!--  articolo flash ====================================================================================  -->
+
+            <article class="articolo-flash bordo-inferiore">
+                <a href="#">
+                    <h4 class="maiuscolo">argomento</h4>
+                    <div class="riga-articolo-flash">
+                        <h3>Donec convallis orci eu nulla posuere, ac lacinia nunc semper. Suspendisse</h3>
+                        <img src="assets/img/flash_img.svg" alt="img" class="img-flash">
+                    </div>
+                </a>
+
+                <div class="riga autore">
+                    <a href="#">
+                        <span>di</span>
+                        <span class="grassetto">autore</span>
+                    </a>
+
+                    <nav class="riga icone-autore">
+                        <a href="#">
+                            <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                        </a>
+                        <a href="#" class="icona-separatrice">
+                            <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                        </a>
+                        <p>(3)</p>
+                    </nav>
+                </div>
+            </article>
+        </aside>
+    </section>
+
+    <hr class="separatore-articoli separatore-computer">
+
+    <!--  ============================================================================  -->
+    <!--  LAYOUT RIEMPITIVO  -->
+    <!--  ============================================================================  -->
+
+    <section class="layout-flash">
+        <article class="articolo-flash bordo-inferiore flash-riempitivo">
             <a href="#">
-                <h4 class="maiuscolo">mondo</h4>
-                <div class="articolo-flash">
-                    <h3>Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue imperdiet</h3>
-                    <img src="assets/img/90x90.svg" alt="img">
+                <h4 class="maiuscolo">argomento</h4>
+                <div class="riga-articolo-flash">
+                    <h3>Nullam vel risus quis libero imperdiet congue. Integer id lacus nec</h3>
+                    <img src="assets/img/flash_img.svg" alt="img" class="img-flash">
+                </div>
+            </a>
+
+            <div class="riga autore">
+                <a href="#">
+                    <span>di</span>
+                    <span class="grassetto">autore</span>
+                </a>
+
+                <nav class="riga icone-autore">
+                    <a href="#">
+                        <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                    </a>
+                    <a href="#" class="icona-separatrice">
+                        <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                    </a>
+                    <p>(3)</p>
+                </nav>
+            </div>
+        </article>
+
+        <article class="articolo-flash bordo-inferiore flash-riempitivo bordo-laterale">
+            <a href="#">
+                <h4 class="maiuscolo">argomento</h4>
+                <div class="riga-articolo-flash">
+                    <h3>In eu tortor quis enim maximus sodales. Quisque non laoreet metus</h3>
+                    <img src="assets/img/flash_img.svg" alt="img" class="img-flash">
+                </div>
+            </a>
+
+            <div class="riga autore">
+                <a href="#">
+                    <span>di</span>
+                    <span class="grassetto">autore</span>
+                </a>
+
+                <nav class="riga icone-autore">
+                    <a href="#">
+                        <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                    </a>
+                    <a href="#" class="icona-separatrice">
+                        <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                    </a>
+                    <p>(3)</p>
+                </nav>
+            </div>
+        </article>
+
+        <article class="articolo-flash flash-riempitivo bordo-laterale">
+            <a href="#">
+                <h4 class="maiuscolo">argomento</h4>
+                <div class="riga-articolo-flash">
+                    <h3>Suspendisse ut orci faucibus, vestibulum velit eu, consequat leo. Sed viverra</h3>
+                    <img src="assets/img/flash_img.svg" alt="img" class="img-flash">
                 </div>
             </a>
 
@@ -174,95 +299,6 @@
             </div>
         </article>
     </section>
-    <!--  articolo principale ====================================================================================  -->
-
-    <hr class="separatore-articoli-fine">
-
-    <article>
-        <a href="#">
-            <h4 class="maiuscolo">mondo</h4>
-            <div class="articolo-flash">
-                <h3>Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue imperdiet</h3>
-                <img src="assets/img/90x90.svg" alt="img">
-            </div>
-        </a>
-
-        <div class="riga autore">
-            <a href="#">
-                <span>di</span>
-                <span class="grassetto">autore</span>
-            </a>
-
-            <nav class="riga icone-autore">
-                <a href="#">
-                    <img src="assets/icons/share.svg" alt="Condividi" class="icona">
-                </a>
-                <a href="#" class="icona-separatrice">
-                    <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
-                </a>
-                <p>(3)</p>
-            </nav>
-        </div>
-    </article>
-
-    <hr class="separatore-articoli-fine">
-
-    <article>
-        <a href="#">
-            <h4 class="maiuscolo">mondo</h4>
-            <div class="articolo-flash">
-                <h3>Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue imperdiet</h3>
-                <img src="assets/img/90x90.svg" alt="img">
-            </div>
-        </a>
-
-        <div class="riga autore">
-            <a href="#">
-                <span>di</span>
-                <span class="grassetto">autore</span>
-            </a>
-
-            <nav class="riga icone-autore">
-                <a href="#">
-                    <img src="assets/icons/share.svg" alt="Condividi" class="icona">
-                </a>
-                <a href="#" class="icona-separatrice">
-                    <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
-                </a>
-                <p>(3)</p>
-            </nav>
-        </div>
-    </article>
-
-    <hr class="separatore-articoli-fine">
-
-    <article>
-        <a href="#">
-            <h4 class="maiuscolo">mondo</h4>
-            <div class="articolo-flash">
-                <h3>Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue imperdiet</h3>
-                <img src="assets/img/90x90.svg" alt="img">
-            </div>
-        </a>
-
-        <div class="riga autore">
-            <a href="#">
-                <span>di</span>
-                <span class="grassetto">autore</span>
-            </a>
-
-            <nav class="riga icone-autore">
-                <a href="#">
-                    <img src="assets/icons/share.svg" alt="Condividi" class="icona">
-                </a>
-                <a href="#" class="icona-separatrice">
-                    <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
-                </a>
-                <p>(3)</p>
-            </nav>
-        </div>
-    </article>
-    <!--  articolo flash ====================================================================================  -->
 
     <hr class="separatore-articoli">
 
@@ -272,16 +308,16 @@
             <a href="#">
                 <h1>video in evidenza</h1>
             </a>
-            <a href="#" class="riga">
-                <h4>Nascondi</h4>
-                <img src="assets/icons/compress.svg" class="icona" alt="Espandi">
-            </a>
+            <button onclick="nascondi('video')" class="riga">
+                <span class="pulsante-nascondi cambio-colore">Nascondi</span>
+                <img src="assets/icons/compress.svg" class="icona" alt="Nascondi">
+            </button>
         </div>
 
-        <div class="riga slider">
+        <div class="riga slider"  id="video">
             <div class="oggetto-slider">
                 <a href="#">
-                    <h4 class="maiuscolo">mondo</h4>
+                    <h4 class="maiuscolo">argomento</h4>
                 </a>
 
                 <div class="separatore-invisibile"></div>
@@ -314,7 +350,7 @@
 
             <div class="oggetto-slider">
                 <a href="#">
-                    <h4 class="maiuscolo">mondo</h4>
+                    <h4 class="maiuscolo">argomento</h4>
                 </a>
 
                 <div class="separatore-invisibile"></div>
@@ -347,7 +383,7 @@
 
             <div class="oggetto-slider">
                 <a href="#">
-                    <h4 class="maiuscolo">mondo</h4>
+                    <h4 class="maiuscolo">argomento</h4>
                 </a>
 
                 <div class="separatore-invisibile"></div>
@@ -380,7 +416,7 @@
 
             <div class="oggetto-slider">
                 <a href="#">
-                    <h4 class="maiuscolo">mondo</h4>
+                    <h4 class="maiuscolo">argomento</h4>
                 </a>
 
                 <div class="separatore-invisibile"></div>
@@ -413,6 +449,206 @@
         </div>
     </section>
     <!--  video ====================================================================================  -->
+
+    <hr class="separatore-articoli">
+
+    <!--  ============================================================================  -->
+    <!--  LAYOUT SECONDARIO  -->
+    <!--  ============================================================================  -->
+
+
+    <!--  articolo secondario ====================================================================================  -->
+    <div class="colonna">
+        <h1>argomento secondario</h1>
+    </div>
+
+    <section class="layout-principale">
+        <article class="articolo-secondario">
+            <a href="#" class="layout-principale-titolo">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus neque</h2>
+            </a>
+
+            <!-- autore -->
+            <div class="riga autore layout-principale-autore">
+                <a href="#">
+                    <span>di</span>
+                    <span class="grassetto">autore</span>
+                </a>
+
+                <nav class="riga">
+                    <a href="#"><img src="assets/icons/share.svg" alt="Condividi" class="icona"></a>
+                    <a href="#" class="icona-separatrice"><img src="assets/icons/comments.svg" alt="Commenti" class="icona"></a>
+                    <span>(3)</span>
+                </nav>
+            </div>
+            <!-- autore -->
+
+            <a href="#" class="centro layout-principale-immagine">
+                <img src="assets/img/main_img.svg" alt="img" class="img-grande">
+            </a>
+
+            <div class="layout-principale-descrizione">
+                <p class="paragrafo">
+                    Nam sagittis purus justo, eget tincidunt dui sagittis at. Donec consectetur ante in augue
+                    imperdiet.
+                    <br>Suspendisse tortor lorem, eleifend vitae porta a, malesuada non metus. Phasellus sed sapien
+                    enim
+                </p>
+                <a class="leggi-articolo" href="#">
+                    <span>Leggi articolo</span>
+                    <img src="assets/icons/next.svg" alt="nxt" class="icona">
+                </a>
+            </div>
+        </article>
+        <!--  articolo secondario ====================================================================================  -->
+
+        <hr class="separatore-articoli separatore-telefono">
+
+        <aside class="articoli-laterali">
+            <article class="articolo-flash bordo-inferiore articolo-flash-laterale">
+                <a href="#">
+                    <h4 class="maiuscolo">argomento</h4>
+                    <div class="riga-articolo-flash">
+                        <h3>Ut non tortor orci. Integer rhoncus justo et tincidunt mollis. Etiam</h3>
+                        <img src="assets/img/flash_img.svg" alt="img" class="img-flash">
+                    </div>
+                </a>
+
+                <div class="riga autore">
+                    <a href="#">
+                        <span>di</span>
+                        <span class="grassetto">autore</span>
+                    </a>
+
+                    <nav class="riga icone-autore">
+                        <a href="#">
+                            <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                        </a>
+                        <a href="#" class="icona-separatrice">
+                            <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                        </a>
+                        <p>(3)</p>
+                    </nav>
+                </div>
+            </article>
+
+            <article class="articolo-flash bordo-inferiore">
+                <a href="#">
+                    <h4 class="maiuscolo">argomento</h4>
+                    <div class="riga-articolo-flash">
+                        <h3>Quisque vel diam ac purus efficitur consequat. Nullam mattis nisi quis</h3>
+                        <img src="assets/img/flash_img.svg" alt="img" class="img-flash">
+                    </div>
+                </a>
+
+                <div class="riga autore">
+                    <a href="#">
+                        <span>di</span>
+                        <span class="grassetto">autore</span>
+                    </a>
+
+                    <nav class="riga icone-autore">
+                        <a href="#">
+                            <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                        </a>
+                        <a href="#" class="icona-separatrice">
+                            <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                        </a>
+                        <p>(3)</p>
+                    </nav>
+                </div>
+            </article>
+        </aside>
+    </section>
+
+    <hr class="separatore-articoli separatore-computer">
+
+    <!--  ============================================================================  -->
+    <!--  LAYOUT RIEMPITIVO  -->
+    <!--  ============================================================================  -->
+
+    <section class="layout-flash">
+        <article class="articolo-flash bordo-inferiore flash-riempitivo">
+            <a href="#">
+                <h4 class="maiuscolo">argomento</h4>
+                <div class="riga-articolo-flash">
+                    <h3>Phasellus nec elit egestas, vulputate quam a, posuere elit. Cras dictum</h3>
+                    <img src="assets/img/flash_img.svg" alt="img" class="img-flash">
+                </div>
+            </a>
+
+            <div class="riga autore">
+                <a href="#">
+                    <span>di</span>
+                    <span class="grassetto">autore</span>
+                </a>
+
+                <nav class="riga icone-autore">
+                    <a href="#">
+                        <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                    </a>
+                    <a href="#" class="icona-separatrice">
+                        <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                    </a>
+                    <p>(3)</p>
+                </nav>
+            </div>
+        </article>
+
+        <article class="articolo-flash bordo-inferiore flash-riempitivo bordo-laterale">
+            <a href="#">
+                <h4 class="maiuscolo">argomento</h4>
+                <div class="riga-articolo-flash">
+                    <h3>Aliquam nibh dui, ultrices vel magna et, varius maximus massa. Maecenas</h3>
+                    <img src="assets/img/flash_img.svg" alt="img" class="img-flash">
+                </div>
+            </a>
+
+            <div class="riga autore">
+                <a href="#">
+                    <span>di</span>
+                    <span class="grassetto">autore</span>
+                </a>
+
+                <nav class="riga icone-autore">
+                    <a href="#">
+                        <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                    </a>
+                    <a href="#" class="icona-separatrice">
+                        <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                    </a>
+                    <p>(3)</p>
+                </nav>
+            </div>
+        </article>
+
+        <article class="articolo-flash flash-riempitivo bordo-laterale">
+            <a href="#">
+                <h4 class="maiuscolo">argomento</h4>
+                <div class="riga-articolo-flash">
+                    <h3>Maecenas volutpat tortor vitae leo lacinia, ut consequat nibh pulvinar. Cras</h3>
+                    <img src="assets/img/flash_img.svg" alt="img" class="img-flash">
+                </div>
+            </a>
+
+            <div class="riga autore">
+                <a href="#">
+                    <span>di</span>
+                    <span class="grassetto">autore</span>
+                </a>
+
+                <nav class="riga icone-autore">
+                    <a href="#">
+                        <img src="assets/icons/share.svg" alt="Condividi" class="icona">
+                    </a>
+                    <a href="#" class="icona-separatrice">
+                        <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
+                    </a>
+                    <p>(3)</p>
+                </nav>
+            </div>
+        </article>
+    </section>
 
     <hr class="separatore-articoli">
 
@@ -429,15 +665,15 @@
                 </a>
             </div>
 
-            <a href="#" class="riga">
-                <h4>Nascondi</h4>
+            <button onclick="nascondi('blog')" class="riga">
+                <span class="pulsante-nascondi cambio-colore">Nascondi</span>
                 <img src="assets/icons/compress.svg" class="icona" alt="Nascondi">
-            </a>
+            </button>
         </div>
 
-        <div class="riga slider">
+        <div class="riga slider" id="blog">
             <div class="oggetto-slider">
-                <div class="riga blog">
+                <div class="riga titolo-blog">
                     <a href="#">
                         <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
                     </a>
@@ -474,13 +710,12 @@
             </div>
 
             <div class="oggetto-slider">
-                <div class="riga blog">
+                <div class="riga titolo-blog">
                     <a href="#">
                         <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
                     </a>
                 </div>
 
-                <!-- autore blog -->
                 <div class="riga">
                     <a>
                         <img src="assets/img/utente.svg" alt="Utente" class="utente">
@@ -511,13 +746,12 @@
             </div>
 
             <div class="oggetto-slider">
-                <div class="riga blog">
+                <div class="riga titolo-blog">
                     <a href="#">
                         <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
                     </a>
                 </div>
 
-                <!-- autore blog -->
                 <div class="riga">
                     <a>
                         <img src="assets/img/utente.svg" alt="Utente" class="utente">
@@ -548,13 +782,12 @@
             </div>
 
             <div class="oggetto-slider">
-                <div class="riga blog">
+                <div class="riga titolo-blog">
                     <a href="#">
                         <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
                     </a>
                 </div>
 
-                <!-- autore blog -->
                 <div class="riga">
                     <a>
                         <img src="assets/img/utente.svg" alt="Utente" class="utente">
@@ -583,11 +816,16 @@
                     <p>(3)</p>
                 </nav>
             </div>
+        </div>
+
+        <div class="centro">
+            <button onclick="" class="leggi-blog maiuscolo">leggi tutti i blog</button>
         </div>
     </section>
     <!--  blog ====================================================================================  -->
 
     <hr class="separatore-articoli">
+
 </main>
 
 <!-- FOOTER -->

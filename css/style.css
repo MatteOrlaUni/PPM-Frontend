@@ -24,11 +24,10 @@ body::-webkit-scrollbar { display: none; }
 header { background-color: white; position: sticky; top: 0; z-index: 100; }
 footer { background: black; color: white; padding: .5rem 2rem; }
 
-h4 { margin: 0; font-size: 1rem; font-weight: 400; color: #7f8589 }
+h4 { margin: 0; font-size: .875rem; font-weight: 400; color: #7f8589 }
 a { text-decoration: none; color: inherit; }
 
-button { border-radius: 2px; background: none; border: none; text-transform: uppercase; }
-button span { text-transform: uppercase; }
+button { border-radius: .15rem; background: none; border: none; }
 hr { margin: 0; border: none; border-top: 1px solid; }
 
 .riga { display: flex; align-items: center; gap: .5rem; }
@@ -133,7 +132,6 @@ hr { margin: 0; border: none; border-top: 1px solid; }
 /* dimensione massima del body */
 @media (min-width: 450px) {
     .cambio-colore { display: flex; }
-    .live { flex-direction: row; align-items: center !important; }
 }
 
 @media (min-width: 600px) {
@@ -145,7 +143,6 @@ hr { margin: 0; border: none; border-top: 1px solid; }
 /* scomparsa delle sezioni del menù */
 @media (min-width: 730px) {
     .menu-sezioni { display: flex; }
-    .elemento-footer { flex-direction: row; }
 }
 
 @media (min-width: 1000px) {
@@ -153,6 +150,7 @@ hr { margin: 0; border: none; border-top: 1px solid; }
     .separatore-header { display: flex; }
     .logo-laterale { display: none; }
     .apparizione-logo { display: none; }
+    .elemento-footer { flex-direction: row; }
 }
 
 /* importanza maggiore per gestire l'apparizione del logo */

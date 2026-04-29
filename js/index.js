@@ -44,3 +44,9 @@ window.addEventListener('resize', function() {
     if (window.innerWidth < 600)
         img.classList.remove('apparizione-logo');
 })
+
+// nasconde video / blog
+function nascondi(id) {
+    const item = document.getElementById(id);
+    item.classList.toggle('nascondi');
+}

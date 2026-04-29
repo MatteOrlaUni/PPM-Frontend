@@ -1,4 +1,3 @@
-
 // gestione data
 const timeElement = document.getElementById('today-date');
 const oggi = new Date();
@@ -18,21 +17,27 @@ const dataISO = oggi.toISOString().split('T')[0];
 timeElement.setAttribute('datetime', dataISO);
 
 
+// gestione ultimo aggiornamento
+const updateTimeElement = document.getElementById('last-update-time');
+
+const ore = oggi.getHours().toString().padStart(2, '0');
+const minuti = oggi.getMinutes().toString().padStart(2, '0');
+
+updateTimeElement.textContent = `${ore}:${minuti}`;
+
+
 // gestione sezione centrale header
 window.addEventListener('scroll', function() {
     const menu = document.getElementById('menu-header-scomparsa');
-    const hr = document.getElementById('menu-header-scomparsa-hr');
     const img = document.getElementById('logo-laterale');
 
     if (window.scrollY > 0) {
-        menu.classList.add('apparizione-testata');
-        hr.classList.add('apparizione-testata');
+        menu.classList.add('nascondi');
 
         if (window.innerWidth > 600)
             img.classList.add('apparizione-logo');
     } else {
-        menu.classList.remove('apparizione-testata');
-        hr.classList.remove('apparizione-testata');
+        menu.classList.remove('nascondi');
         img.classList.remove('apparizione-logo');
     }
 })

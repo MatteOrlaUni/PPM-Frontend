@@ -18,12 +18,12 @@
 <!-- HEADER -->
 <header>
     <div class="riga menu-header">
-        <nav>
+        <div>
             <button class="riga">
                 <img src="assets/icons/menu.svg" class="icona-grande" alt="Icona Ricerca">
                 <span class="cambio-colore maiuscolo">menu</span>
             </button>
-        </nav>
+        </div>
 
         <nav class="menu-sezioni">
             <a href="#">In Edicola</a>
@@ -41,17 +41,15 @@
             <img src="assets/img/logo.svg"  alt="Logo">
         </a>
 
-        <nav class="riga">
+        <div class="riga">
             <button class="pulsante-rosso maiuscolo">abbonati</button>
             <button class="riga">
                 <img src="assets/icons/user.svg" class="icona-grande" alt="Utente">
                 <span class="cambio-colore maiuscolo">accedi</span>
             </button>
-        </nav>
+        </div>
     </div>
     
-    <hr class="separatore-header" id="menu-header-scomparsa-hr">
-
     <div class="riga menu-header-scomparsa" id="menu-header-scomparsa">
         <div class="colonna sinistra">
             <p class="menu-header-scomparsa-titolo">Sostieni il nostro giornalismo</p>
@@ -64,13 +62,11 @@
 
         <div class="colonna destra data">
             <time id="today-date" datetime=""></time>
-            <p>Ultimo aggiornamento: 11:30</p>
+            <p>Ultimo aggiornamento: <time id="last-update-time"></time></p>
         </div>
     </div>
 
-    <hr>
-    
-    <nav class="riga menu-slider">
+    <nav class="menu-slider riga slider">
         <a href="#" class="logo-laterale" id="logo-laterale">
             <img src="assets/img/logo.svg" alt="Logo piccolo" height="40">
         </a>
@@ -86,15 +82,14 @@
         <a href="#"><h4>Donald Trump</h4></a>
     </nav>
 
-    <hr>
 </header>
 
 <!-- MAIN -->
 <main>
 
-    <div class="ad-centrale">Pubblicità</div>
+    <div class="centro ad-centrale">Pubblicità</div>
 
-    <hr class="separatore-articoli">
+    <hr>
 
     <!--  ============================================================================  -->
     <!--  LAYOUT PRINCIPALE  -->
@@ -117,17 +112,17 @@
             </a>
 
             <!-- autore -->
-            <div class="riga autore layout-principale-autore">
+            <div class="riga riga-separatrice autore layout-principale-autore">
                 <a href="#">
                     <span>di</span>
                     <span class="grassetto">autore</span>
                 </a>
 
-                <nav class="riga">
+                <div class="riga">
                     <a href="#"><img src="assets/icons/share.svg" alt="Condividi" class="icona"></a>
                     <a href="#" class="icona-separatrice"><img src="assets/icons/comments.svg" alt="Commenti" class="icona"></a>
                     <span>(3)</span>
-                </nav>
+                </div>
             </div>
             <!-- autore -->
 
@@ -150,7 +145,7 @@
         </article>
         <!--  articolo principale ====================================================================================  -->
 
-        <hr class="separatore-articoli separatore-telefono">
+        <hr class="separatore-telefono">
 
         <aside class="articoli-laterali">
         <!--  articolo flash ====================================================================================  -->
@@ -163,13 +158,13 @@
                     </div>
                 </a>
 
-                <div class="riga autore">
+                <div class="riga riga-separatrice autore">
                     <a href="#">
                         <span>di</span>
                         <span class="grassetto">autore</span>
                     </a>
 
-                    <nav class="riga icone-autore">
+                    <div class="riga icone-autore">
                         <a href="#">
                             <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                         </a>
@@ -177,7 +172,7 @@
                             <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                         </a>
                         <p>(3)</p>
-                    </nav>
+                    </div>
                 </div>
             </article>
             <!--  articolo flash ====================================================================================  -->
@@ -191,13 +186,13 @@
                     </div>
                 </a>
 
-                <div class="riga autore">
+                <div class="riga riga-separatrice autore">
                     <a href="#">
                         <span>di</span>
                         <span class="grassetto">autore</span>
                     </a>
 
-                    <nav class="riga icone-autore">
+                    <div class="riga icone-autore">
                         <a href="#">
                             <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                         </a>
@@ -205,13 +200,13 @@
                             <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                         </a>
                         <p>(3)</p>
-                    </nav>
+                    </div>
                 </div>
             </article>
         </aside>
     </section>
 
-    <hr class="separatore-articoli separatore-computer">
+    <hr class="separatore-computer">
 
     <!--  ============================================================================  -->
     <!--  LAYOUT RIEMPITIVO  -->
@@ -227,13 +222,13 @@
                 </div>
             </a>
 
-            <div class="riga autore">
+            <div class="riga riga-separatrice autore">
                 <a href="#">
                     <span>di</span>
                     <span class="grassetto">autore</span>
                 </a>
 
-                <nav class="riga icone-autore">
+                <div class="riga icone-autore">
                     <a href="#">
                         <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                     </a>
@@ -241,7 +236,7 @@
                         <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                     </a>
                     <p>(3)</p>
-                </nav>
+                </div>
             </div>
         </article>
 
@@ -254,13 +249,13 @@
                 </div>
             </a>
 
-            <div class="riga autore">
+            <div class="riga riga-separatrice autore">
                 <a href="#">
                     <span>di</span>
                     <span class="grassetto">autore</span>
                 </a>
 
-                <nav class="riga icone-autore">
+                <div class="riga icone-autore">
                     <a href="#">
                         <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                     </a>
@@ -268,7 +263,7 @@
                         <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                     </a>
                     <p>(3)</p>
-                </nav>
+                </div>
             </div>
         </article>
 
@@ -281,13 +276,13 @@
                 </div>
             </a>
 
-            <div class="riga autore">
+            <div class="riga riga-separatrice autore">
                 <a href="#">
                     <span>di</span>
                     <span class="grassetto">autore</span>
                 </a>
 
-                <nav class="riga icone-autore">
+                <div class="riga icone-autore">
                     <a href="#">
                         <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                     </a>
@@ -295,16 +290,16 @@
                         <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                     </a>
                     <p>(3)</p>
-                </nav>
+                </div>
             </div>
         </article>
     </section>
 
-    <hr class="separatore-articoli">
+    <hr>
 
     <!--  video ====================================================================================  -->
     <section>
-        <div class="riga-separatrice">
+        <div class="riga riga-separatrice">
             <a href="#">
                 <h1>video in evidenza</h1>
             </a>
@@ -314,7 +309,7 @@
             </button>
         </div>
 
-        <div class="riga slider"  id="video">
+        <div class="riga slider" id="video">
             <div class="oggetto-slider">
                 <a href="#">
                     <h4 class="maiuscolo">argomento</h4>
@@ -330,13 +325,13 @@
                     <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
                 </a>
 
-                <div class="riga autore">
+                <div class="riga riga-separatrice autore">
                     <a href="#">
                         <span>di</span>
                         <span class="grassetto">autore</span>
                     </a>
 
-                    <nav class="riga icone-autore">
+                    <div class="riga icone-autore">
                         <a href="#">
                             <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                         </a>
@@ -344,7 +339,7 @@
                             <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                         </a>
                         <p>(3)</p>
-                    </nav>
+                    </div>
                 </div>
             </div>
 
@@ -363,13 +358,13 @@
                     <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
                 </a>
 
-                <div class="riga autore">
+                <div class="riga riga-separatrice autore">
                     <a href="#">
                         <span>di</span>
                         <span class="grassetto">autore</span>
                     </a>
 
-                    <nav class="riga icone-autore">
+                    <div class="riga icone-autore">
                         <a href="#">
                             <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                         </a>
@@ -377,7 +372,7 @@
                             <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                         </a>
                         <p>(3)</p>
-                    </nav>
+                    </div>
                 </div>
             </div>
 
@@ -396,13 +391,13 @@
                     <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
                 </a>
 
-                <div class="riga autore">
+                <div class="riga riga-separatrice autore">
                     <a href="#">
                         <span>di</span>
                         <span class="grassetto">autore</span>
                     </a>
 
-                    <nav class="riga icone-autore">
+                    <div class="riga icone-autore">
                         <a href="#">
                             <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                         </a>
@@ -410,7 +405,7 @@
                             <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                         </a>
                         <p>(3)</p>
-                    </nav>
+                    </div>
                 </div>
             </div>
 
@@ -429,13 +424,13 @@
                     <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
                 </a>
 
-                <div class="riga autore">
+                <div class="riga riga-separatrice autore">
                     <a href="#">
                         <span>di</span>
                         <span class="grassetto">autore</span>
                     </a>
 
-                    <nav class="riga icone-autore">
+                    <div class="riga icone-autore">
                         <a href="#">
                             <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                         </a>
@@ -443,14 +438,14 @@
                             <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                         </a>
                         <p>(3)</p>
-                    </nav>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!--  video ====================================================================================  -->
 
-    <hr class="separatore-articoli">
+    <hr>
 
     <!--  ============================================================================  -->
     <!--  LAYOUT SECONDARIO  -->
@@ -469,17 +464,17 @@
             </a>
 
             <!-- autore -->
-            <div class="riga autore layout-principale-autore">
+            <div class="riga riga-separatrice autore layout-principale-autore">
                 <a href="#">
                     <span>di</span>
                     <span class="grassetto">autore</span>
                 </a>
 
-                <nav class="riga">
+                <div class="riga">
                     <a href="#"><img src="assets/icons/share.svg" alt="Condividi" class="icona"></a>
                     <a href="#" class="icona-separatrice"><img src="assets/icons/comments.svg" alt="Commenti" class="icona"></a>
                     <span>(3)</span>
-                </nav>
+                </div>
             </div>
             <!-- autore -->
 
@@ -502,7 +497,7 @@
         </article>
         <!--  articolo secondario ====================================================================================  -->
 
-        <hr class="separatore-articoli separatore-telefono">
+        <hr class="separatore-telefono">
 
         <aside class="articoli-laterali">
             <article class="articolo-flash bordo-inferiore articolo-flash-laterale">
@@ -514,13 +509,13 @@
                     </div>
                 </a>
 
-                <div class="riga autore">
+                <div class="riga riga-separatrice autore">
                     <a href="#">
                         <span>di</span>
                         <span class="grassetto">autore</span>
                     </a>
 
-                    <nav class="riga icone-autore">
+                    <div class="riga icone-autore">
                         <a href="#">
                             <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                         </a>
@@ -528,7 +523,7 @@
                             <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                         </a>
                         <p>(3)</p>
-                    </nav>
+                    </div>
                 </div>
             </article>
 
@@ -541,13 +536,13 @@
                     </div>
                 </a>
 
-                <div class="riga autore">
+                <div class="riga riga-separatrice autore">
                     <a href="#">
                         <span>di</span>
                         <span class="grassetto">autore</span>
                     </a>
 
-                    <nav class="riga icone-autore">
+                    <div class="riga icone-autore">
                         <a href="#">
                             <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                         </a>
@@ -555,13 +550,13 @@
                             <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                         </a>
                         <p>(3)</p>
-                    </nav>
+                    </div>
                 </div>
             </article>
         </aside>
     </section>
 
-    <hr class="separatore-articoli separatore-computer">
+    <hr class="separatore-computer">
 
     <!--  ============================================================================  -->
     <!--  LAYOUT RIEMPITIVO  -->
@@ -577,13 +572,13 @@
                 </div>
             </a>
 
-            <div class="riga autore">
+            <div class="riga riga-separatrice autore">
                 <a href="#">
                     <span>di</span>
                     <span class="grassetto">autore</span>
                 </a>
 
-                <nav class="riga icone-autore">
+                <div class="riga icone-autore">
                     <a href="#">
                         <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                     </a>
@@ -591,7 +586,7 @@
                         <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                     </a>
                     <p>(3)</p>
-                </nav>
+                </div>
             </div>
         </article>
 
@@ -604,13 +599,13 @@
                 </div>
             </a>
 
-            <div class="riga autore">
+            <div class="riga riga-separatrice autore">
                 <a href="#">
                     <span>di</span>
                     <span class="grassetto">autore</span>
                 </a>
 
-                <nav class="riga icone-autore">
+                <div class="riga icone-autore">
                     <a href="#">
                         <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                     </a>
@@ -618,7 +613,7 @@
                         <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                     </a>
                     <p>(3)</p>
-                </nav>
+                </div>
             </div>
         </article>
 
@@ -631,13 +626,13 @@
                 </div>
             </a>
 
-            <div class="riga autore">
+            <div class="riga riga-separatrice autore">
                 <a href="#">
                     <span>di</span>
                     <span class="grassetto">autore</span>
                 </a>
 
-                <nav class="riga icone-autore">
+                <div class="riga icone-autore">
                     <a href="#">
                         <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                     </a>
@@ -645,16 +640,16 @@
                         <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                     </a>
                     <p>(3)</p>
-                </nav>
+                </div>
             </div>
         </article>
     </section>
 
-    <hr class="separatore-articoli">
+    <hr>
 
     <!--  blog ====================================================================================  -->
     <section>
-        <div class="riga-separatrice">
+        <div class="riga riga-separatrice">
             <div class="riga">
                 <a href="#">
                     <img src="assets/img/blog.svg" alt="Espandi" width="60">
@@ -672,7 +667,7 @@
         </div>
 
         <div class="riga slider" id="blog">
-            <div class="oggetto-slider">
+            <article class="oggetto-slider">
                 <div class="riga titolo-blog">
                     <a href="#">
                         <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
@@ -698,7 +693,7 @@
 
                 <div class="separatore-invisibile"></div>
 
-                <nav class="riga icone-autore">
+                <div class="riga icone-autore">
                     <a href="#">
                         <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                     </a>
@@ -706,10 +701,10 @@
                         <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                     </a>
                     <p>(3)</p>
-                </nav>
-            </div>
+                </div>
+            </article>
 
-            <div class="oggetto-slider">
+            <article class="oggetto-slider">
                 <div class="riga titolo-blog">
                     <a href="#">
                         <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
@@ -734,7 +729,7 @@
 
                 <div class="separatore-invisibile"></div>
 
-                <nav class="riga icone-autore">
+                <div class="riga icone-autore">
                     <a href="#">
                         <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                     </a>
@@ -742,10 +737,10 @@
                         <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                     </a>
                     <p>(3)</p>
-                </nav>
-            </div>
+                </div>
+            </article>
 
-            <div class="oggetto-slider">
+            <article class="oggetto-slider">
                 <div class="riga titolo-blog">
                     <a href="#">
                         <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
@@ -770,7 +765,7 @@
 
                 <div class="separatore-invisibile"></div>
 
-                <nav class="riga icone-autore">
+                <div class="riga icone-autore">
                     <a href="#">
                         <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                     </a>
@@ -778,10 +773,10 @@
                         <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                     </a>
                     <p>(3)</p>
-                </nav>
-            </div>
+                </div>
+            </article>
 
-            <div class="oggetto-slider">
+            <article class="oggetto-slider">
                 <div class="riga titolo-blog">
                     <a href="#">
                         <h3>Sed a risus eu sem ultricies congue. Pellentesque fringilla condimentum nulla</h3>
@@ -806,7 +801,7 @@
 
                 <div class="separatore-invisibile"></div>
 
-                <nav class="riga icone-autore">
+                <div class="riga icone-autore">
                     <a href="#">
                         <img src="assets/icons/share.svg" alt="Condividi" class="icona">
                     </a>
@@ -814,8 +809,8 @@
                         <img src="assets/icons/comments.svg" alt="Commenti" class="icona">
                     </a>
                     <p>(3)</p>
-                </nav>
-            </div>
+                </div>
+            </article>
         </div>
 
         <div class="centro">
@@ -824,7 +819,7 @@
     </section>
     <!--  blog ====================================================================================  -->
 
-    <hr class="separatore-articoli">
+    <hr>
 
 </main>
 
@@ -834,7 +829,7 @@
         <img src="assets/img/logo.svg" alt="Logo negativo" class="negativo" height="32">
     </a>
 
-    <hr class="separatore-articoli negativo">
+    <hr class="negativo">
 
     <nav class="colonna maiuscolo elemento-footer">
         <a href="#">termini e condizioni d'uso</a>
@@ -848,7 +843,7 @@
         <a href="#">contatti</a>
     </nav>
 
-    <hr class="separatore-articoli negativo">
+    <hr class="negativo">
 
     <nav class="colonna maiuscolo elemento-footer">
         <a href="#">tv loft</a>
@@ -860,7 +855,7 @@
         <a href="#">community</a>
     </nav>
 
-    <hr class="separatore-articoli negativo">
+    <hr class="negativo">
 
     <nav class="riga maiuscolo elemento-footer centro icone-footer negativo">
         <a href="#"><img src="assets/icons/facebook.svg" alt="" class="icona"></a>
@@ -871,7 +866,7 @@
         <a href="#"><img src="assets/icons/x.svg" alt="" class="icona"></a>
     </nav>
 
-    <hr class="separatore-articoli negativo">
+    <hr class="negativo">
 
     <p class="centro elemento-footer">&copy; 2026 Bozza Quotidiano. Lorem ipsum dolor sit amet.</p>
 </footer>

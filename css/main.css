@@ -32,12 +32,12 @@ h2 { font-family: "EB Garamond",serif; font-weight: 500; font-size: 2.25rem; lin
 h3 { font-family: "EB Garamond",serif; font-size: 1.375rem; font-weight: 500; line-height: 1.15; margin: .75rem 0; color: #262424; }
 p { margin: 0; }
 
-.separatore-articoli { margin: .5rem 0; border-top: 2px solid; }
+hr { margin: .5rem 0; border-top: 1px solid; }
+
 .separatore-computer { display: none; }
 .bordo-inferiore { border-bottom: 1px solid #7f8589; }
 
 .autore {
-    justify-content: space-between;
     text-transform: uppercase;
     padding: .5rem 0;
 }
@@ -115,7 +115,7 @@ p { margin: 0; }
 
 .slider::-webkit-scrollbar { display: none; }
 .oggetto-slider { min-width: 248px; padding: 0 1rem; scroll-snap-align: start; border-right: solid 1px #dddddd; }
-.copertina-video { display: flex; justify-content: center; border-radius: .2rem; }
+.copertina-video { border-radius: .2rem; }
 
 .titolo-blog {
     font-style: italic;
@@ -141,7 +141,6 @@ p { margin: 0; }
 .leggi-blog {
     background-color: #282728;
     color: white;
-    border-radius: .15rem;
     font-size: .875rem;
     padding: .75rem;
     margin: 1rem;
@@ -161,17 +160,17 @@ p { margin: 0; }
     .live { flex-direction: row; align-items: center; }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 730px) {
     .layout-principale { display: flex; gap: 1rem; }
     .articoli-laterali { width: 29%; border-left: 1px solid #7f8589; padding-left: 1rem; }
 
     .layout-flash { display: flex; justify-content: space-between; }
     .flash-riempitivo { width: 30%; }
 
-    .layout-principale-titolo { grid-area: uno; }
-    .layout-principale-autore { grid-area: due; }
-    .layout-principale-immagine { grid-area: tre; }
-    .layout-principale-descrizione { grid-area: quattro; }
+    .layout-principale-titolo { grid-area: titolo; }
+    .layout-principale-autore { grid-area: autore; }
+    .layout-principale-immagine { grid-area: immagine; }
+    .layout-principale-descrizione { grid-area: descrizione; }
     .separatore-telefono { display: none; }
     .separatore-computer { display: block; }
 
@@ -184,9 +183,9 @@ p { margin: 0; }
         grid-template-rows: min-content min-content 1fr;
         align-items: start;
         grid-template-areas:
-            "uno tre"
-            "quattro tre"
-            "due tre";
+            "titolo immagine"
+            "descrizione immagine"
+            "autore immagine";
     }
 
     .articolo-secondario {
@@ -198,9 +197,9 @@ p { margin: 0; }
         grid-template-rows: min-content min-content 1fr;
         align-items: start;
         grid-template-areas:
-            "uno uno"
-            "tre quattro"
-            "tre due";
+            "titolo titolo"
+            "immagine descrizione"
+            "immagine autore";
     }
 
     .bordo-inferiore { border: none; }

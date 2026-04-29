@@ -28,7 +28,6 @@ h4 { margin: 0; font-size: .875rem; font-weight: 400; color: #7f8589 }
 a { text-decoration: none; color: inherit; }
 
 button { border-radius: .15rem; background: none; border: none; }
-hr { margin: 0; border: none; border-top: 1px solid; }
 
 .riga { display: flex; align-items: center; gap: .5rem; }
 .colonna { display: flex; flex-direction: column; flex: 1; }
@@ -37,8 +36,8 @@ hr { margin: 0; border: none; border-top: 1px solid; }
 .grassetto { font-weight: 400; }
 .negativo { filter: invert(100%); }
 
-.riga-separatrice { display: flex; align-items: center; gap: .5rem; justify-content: space-between; }
-.separatore-invisibile { content: ""; margin: .75rem 0; }
+.riga-separatrice { justify-content: space-between; }
+.separatore-invisibile { margin: .75rem 0; }
 
 /* --------------------------------------------------------------------------------------------------------------------- */
 /* HEADER */
@@ -48,6 +47,7 @@ hr { margin: 0; border: none; border-top: 1px solid; }
     justify-content: space-between;
     padding: 1rem;
     background-color: white;
+    border-bottom: solid 1px;
 }
 
 .menu-sezioni { display: none; gap: 1rem; }
@@ -56,10 +56,8 @@ hr { margin: 0; border: none; border-top: 1px solid; }
     display: none;
     justify-content: space-between;
     padding: .1rem .5rem;
+    border-bottom: solid 1px;
 }
-
-.separatore-header { display: none; }
-.apparizione-testata { display: none !important; }
 
 .menu-header-scomparsa-titolo { font-family: "EB Garamond",serif; font-size: 1.375rem; font-weight: 500; }
 .menu-header-scomparsa-sottotitolo { font-size: .8rem; color: #706f6f; }
@@ -70,12 +68,9 @@ hr { margin: 0; border: none; border-top: 1px solid; }
     gap: 1rem;
     padding: 1rem;
     color: #262424;
+    border-bottom: solid 1px;
 
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
     white-space: nowrap;
-    flex-shrink: 0;
 }
 
 .menu-slider::-webkit-scrollbar { display: none; }
@@ -91,7 +86,6 @@ hr { margin: 0; border: none; border-top: 1px solid; }
     color: white;
     font-size: .875rem;
     padding: .45rem;
-    border-radius: .15rem;
     transition: .5s ease;
 }
 
@@ -110,10 +104,8 @@ hr { margin: 0; border: none; border-top: 1px solid; }
 /* --------------------------------------------------------------------------------------------------------------------- */
 
 .ad-centrale {
-    font-size: 1rem;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    font-size: 1rem;
     height: 230px;
 }
 
@@ -129,28 +121,26 @@ hr { margin: 0; border: none; border-top: 1px solid; }
 /* MEDIA */
 /* --------------------------------------------------------------------------------------------------------------------- */
 
-/* dimensione massima del body */
 @media (min-width: 450px) {
     .cambio-colore { display: flex; }
 }
 
 @media (min-width: 600px) {
-    .menu { display: none; }
     .logo-telefono { display: none; }
     .logo-laterale { display: flex; }
 }
 
-/* scomparsa delle sezioni del menù */
-@media (min-width: 730px) {
+/* riorganizzazione layout per pc */
+@media (min-width: 800px) {
     .menu-sezioni { display: flex; }
 }
 
+/* massima dimensione del body */
 @media (min-width: 1000px) {
     .menu-header-scomparsa { display: flex; }
-    .separatore-header { display: flex; }
     .logo-laterale { display: none; }
     .apparizione-logo { display: none; }
-    .elemento-footer { flex-direction: row; }
+    .elemento-footer { flex-direction: row; gap: 1rem; justify-content: center; }
 }
 
 /* importanza maggiore per gestire l'apparizione del logo */

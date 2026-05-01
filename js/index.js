@@ -34,7 +34,7 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > 0) {
         menu.classList.add('nascondi');
 
-        if (window.innerWidth > 600)
+        if (window.innerWidth > 800)
             img.classList.add('apparizione-logo');
     } else {
         menu.classList.remove('nascondi');
@@ -46,7 +46,7 @@ window.addEventListener('scroll', function() {
 window.addEventListener('resize', function() {
     const img = document.getElementById('logo-laterale');
 
-    if (window.innerWidth < 600)
+    if (window.innerWidth < 800)
         img.classList.remove('apparizione-logo');
 })
 

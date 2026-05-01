@@ -44,6 +44,9 @@ button { border-radius: .15rem; background: none; border: none; }
 .spazio-sopra { padding-top: 1rem; }
 .spazio-sopra-piccolo { padding-top: .5rem; }
 
+.icona { width: 16px; height: 16px; display: block; }
+.icona-grande { width: 24px; height: 24px; }
+
 
 /* --------------------------------------------------------------------------------------------------------------------- */
 /* HEADER */
@@ -76,14 +79,13 @@ button { border-radius: .15rem; background: none; border: none; }
     color: #262424;
     border-bottom: solid 1px;
     white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
 }
 .menu-slider::-webkit-scrollbar { display: none; }
 
 .cambio-colore { display: none; font-size: .9rem; transition: 0.5s ease; color: #262424; }
 .cambio-colore:hover { color: #7f8589; }
-
-.icona-grande { width: 24px; height: 24px; }
-.icona { width: 16px; height: 16px; }
 
 .pulsante-rosso {
     background-color: #a83946;
@@ -129,14 +131,11 @@ button { border-radius: .15rem; background: none; border: none; }
     .cambio-colore { display: flex; }
 }
 
-@media (min-width: 600px) {
-    .logo-telefono { display: none; }
-    .logo-laterale { display: flex; }
-}
-
 /* riorganizzazione layout per pc */
 @media (min-width: 800px) {
     .menu-sezioni { display: flex; }
+    .logo-telefono { display: none; }
+    .logo-laterale { display: flex; }
 }
 
 /* massima dimensione del body */
